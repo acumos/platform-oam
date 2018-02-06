@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f0a65b26_aa2c30dc",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2018-02-06T19:38:38Z",
+      "side": 1,
+      "message": "Please add jenkins job that builds the docker images for this repo",
+      "revId": "cec17f3a71c17925282c8a918a77f5f67c6218ef",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc888590_c4d4e4e0",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2018-02-06T19:38:38Z",
+      "side": 1,
+      "message": "please replace cognita key word.",
+      "range": {
+        "startLine": 46,
+        "startChar": 13,
+        "endLine": 46,
+        "endChar": 23
+      },
+      "revId": "cec17f3a71c17925282c8a918a77f5f67c6218ef",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
