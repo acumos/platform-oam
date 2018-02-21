@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47498f47_ade436a6",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2018-02-21T17:21:09Z",
+      "side": 1,
+      "message": "This needs to be externalized.",
+      "range": {
+        "startLine": 46,
+        "startChar": 3,
+        "endLine": 48,
+        "endChar": 25
+      },
+      "revId": "7c386eaf91edb1e68395e329190e9f64e7f14c77",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
