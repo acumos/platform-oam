@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eadc2ef0_9ee97f51",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-02-22T14:45:24Z",
+      "side": 1,
+      "message": "is this supposed to be filebeat instead of filebeatl?",
+      "range": {
+        "startLine": 45,
+        "startChar": 29,
+        "endLine": 45,
+        "endChar": 30
+      },
+      "revId": "1a849581ce23402c621e5c5cf73979cac012f53b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a05b416_7f0399d3",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-02-22T14:45:24Z",
+      "side": 1,
+      "message": "why is this \"cognita\" instead of \"acumos\" ??",
+      "range": {
+        "startLine": 45,
+        "startChar": 7,
+        "endLine": 45,
+        "endChar": 14
+      },
+      "revId": "1a849581ce23402c621e5c5cf73979cac012f53b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
