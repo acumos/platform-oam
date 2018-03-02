@@ -23,7 +23,7 @@ Acumos Platform Operations, Administration, and Management (OA&M) Documentation
        :maxdepth: 2
 
        release-notes
-       Developer_Guide
-       User_Guide
+       developer-guide       
+       user-guide
 
 * :ref:`search`
