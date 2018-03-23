@@ -27,7 +27,7 @@ services:
       - "9200:9200"
       - "9300:9300"
     environment:
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ES_JAVA_OPTS: "-Xmx4g -Xms4g"
     networks:
       - elk
 
@@ -39,7 +39,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      LS_JAVA_OPTS: "-Xmx4g -Xms4g"
     networks:
       - elk
     depends_on:
@@ -61,6 +61,4 @@ networks:
   elk:
     driver: bridge
 
-volumes:
-    acumos-logs:
-        external: true
+

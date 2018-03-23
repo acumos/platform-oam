@@ -25,7 +25,7 @@
         <!-- docker image name -->
         <artifactId>acumos-elasticsearch</artifactId>
         <!-- docker tag -->
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.2-SNAPSHOT</version>
 </project>
 
 
