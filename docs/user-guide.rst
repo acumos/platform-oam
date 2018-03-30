@@ -200,4 +200,20 @@ Click on "Dashboard", On the below screen created dashboard can be viewed namely
 
 .. image:: images/kibana_dashboard_8.jpg
 
+Acumos Kibana Dashboard Save
+--------------------------------
 
+Click on "Management", On the below screen click on save object.
+
+.. image:: images/kibana_save_dashboard_1.JPG
+
+
+Click on "Export Everything" to export the dashboard and "Import" to import the saved dashboard.
+
+.. image:: images/kibana_save_dashboard_2.JPG
+
+.. note::
+
+    export/import document should be in JSON format.
+
+An example JSON file that can be used to import a Dashboard is available in the platform-oam repo, `elk-stack directory <https://gerrit.acumos.org/r/gitweb?p=platform-oam.git;a=tree;f=elk-stack;hb=refs/heads/master>`_.

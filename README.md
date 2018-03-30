@@ -17,7 +17,11 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 -->
-# Acumos Platform Operations, Administration, and Management (OA&M)
+
+# Platform Operations, Administration, and Management (OA&M)
 
 Please see the documentation in the "docs" folder.
+
+In the elk-stack folder, there is a JSON file that can be used to import a Dashboard into Kibana. 
+Please see the [Elastic Stack for Log Analytics] (http://docs.acumos.org/en/latest/submodules/platform-oam/docs/user-guide.html#acumos-elastic-stack-for-log-analytics) guide for how to export/import a Dashboard.
 
