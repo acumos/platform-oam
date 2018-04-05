@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "df19103f_e13bc289",
+        "filename": "elk-stack/acumos-elk-env.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-05T15:03:38Z",
+      "side": 1,
+      "message": "This is a very large size for the MINIMUM.  Please consider defining min/max.",
+      "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8a13254d_3efa3ce4",
         "filename": "elk-stack/docker-compose-elk.sh",
         "patchSetId": 1
@@ -19,6 +36,91 @@
         "endLine": 1,
         "endChar": 85
       },
+      "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "39434ed4_9d8a3f86",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-05T15:03:38Z",
+      "side": 1,
+      "message": "Why are ports used? This opens access to the world.  Perhaps it can be limited to \"expose\"?",
+      "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8c17ae5d_f154f198",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-05T15:03:38Z",
+      "side": 1,
+      "message": "I think it would be wise to allow different values for min/max.",
+      "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f60a30dc_a35b574f",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-05T15:03:38Z",
+      "side": 1,
+      "message": "Same ports/expose issue",
+      "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "91f71b82_9a0f3470",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-05T15:03:38Z",
+      "side": 1,
+      "message": "I think it would be wise to allow different values for min/max.",
+      "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "55465e6f_d54c5859",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-05T15:03:38Z",
+      "side": 1,
+      "message": "Same ports/expose issue",
       "revId": "a8ee4abcfd9b30d2eaaf0e7cc38f8a8294d95ec7",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
