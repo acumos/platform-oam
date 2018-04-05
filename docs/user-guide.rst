@@ -67,26 +67,32 @@ Steps
 
    $ git clone https://gerrit.acumos.org/r/platform-oam
 
+2. Create docker volume namely acumos-esdata
+   
+.. code:: bash
 
-2. The docker-compose.yaml file as well as component directories are located in the elk-stack directory. Each component has a Dockerfile. You need to build the docker-compose file if you are using it for the first time or if you have made changed any Dockerfile or the contents of its build directory.
+   $ docker volume create acumos-esdata
+
+
+3. The docker-compose.yaml file as well as component directories are located in the elk-stack directory. Each component has a Dockerfile. You need to build the docker-compose file if you are using it for the first time or if you have made changed any Dockerfile or the contents of its build directory.
 
 .. code:: bash
 
-   $ docker-compose build
+   $ ./docker-compose-elk.sh build
 
 
-3. Builds, (re)creates, starts, and attaches to containers for Elasticsearch, Logstash, Kibana
-
-.. code:: bash
-
-   $ docker-compose up -d
-
-
-4. To stop the running containers without removing them
+4. Builds, (re)creates, starts, and attaches to containers for Elasticsearch, Logstash, Kibana
 
 .. code:: bash
 
-   $ docker-compose stop
+   $ ./docker-compose-elk.sh up -d
+
+
+5. To stop the running containers without removing them
+
+.. code:: bash
+
+   $ ./docker-compose-elk.sh stop
 
 
 Filebeat setup steps:
