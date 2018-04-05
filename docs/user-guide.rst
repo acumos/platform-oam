@@ -72,21 +72,21 @@ Steps
 
 .. code:: bash
 
-   $ docker-compose build
+   $ ./docker-compose-elk.sh build
 
 
 3. Builds, (re)creates, starts, and attaches to containers for Elasticsearch, Logstash, Kibana
 
 .. code:: bash
 
-   $ docker-compose up -d
+   $ ./docker-compose-elk.sh up -d
 
 
 4. To stop the running containers without removing them
 
 .. code:: bash
 
-   $ docker-compose stop
+   $ ./docker-compose-elk.sh stop
 
 
 Filebeat setup steps:
