@@ -21,25 +21,31 @@ services:
 
   elasticsearch:
     build: elasticsearch/
+    container_name: acumos-elasticsearch
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - acumos-esdata:/usr/share/elasticsearch/data
     ports:
-      - "9200:9200"
-      - "9300:9300"
+    #Node client default listens at 9200, metricbeat and logstash index data into Elasticsearch using this port.
+     - "${ACUMOS_ELK_ELASTICSEARCH_PORT}:9200"
+    #Transport client default is 9300 this port is used for nodes communication. If this port is not open, your nodes will not be able to form a cluster.
+     - "${ACUMOS_ELK_NODE_PORT}:9300"
     environment:
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ES_JAVA_OPTS: "-Xmx${ACUMOS_ELK_ES_JAVA_HEAP_MAX_SIZE} -Xms${ACUMOS_ELK_ES_JAVA_HEAP_MIN_SIZE}"
     networks:
       - elk
 
   logstash:
     build: logstash/
+    container_name: acumos-logstash
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
-      - "5000:5000"
+    #Logstash default listens at 5000, Filebeat agentship log to this port.
+      - "${ACUMOS_ELK_LOGSTASH_PORT}:5000"
     environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      LS_JAVA_OPTS: "-Xmx${ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE} -Xms${ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE}"
     networks:
       - elk
     depends_on:
@@ -47,20 +53,22 @@ services:
 
   kibana:
     build: kibana/
+    container_name: acumos-kibana
     volumes:
       - ./kibana/config/:/usr/share/kibana/config
     ports:
-      - "5601:5601"
+    #Kiban is accessed on the web browser. Used for visualization of logs.
+      - "${ACUMOS_ELK_KIBANA_PORT}:5601"
     networks:
       - elk
     depends_on:
       - elasticsearch
 
-networks:
 
+networks:
   elk:
     driver: bridge
 
 volumes:
-    acumos-logs:
+    acumos-esdata:
         external: true
