@@ -24,10 +24,10 @@ services:
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     ports:
-      - "9200:9200"
-      - "9300:9300"
+      - "${ACUMOS_ELK_API_ELASTICSEARCH_API_LISTENS_PORT}:9200"
+      - "${ACUMOS_ELK_API_ELASTICSEARCH_NODE_LISTENS_PORT}:9300"
     environment:
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ES_JAVA_OPTS: "-Xmx${ACUMOS_ELK_API_JAVA_HEAP_SIZE} -Xms${ACUMOS_ELK_API_JAVA_HEAP_SIZE}"
     networks:
       - elk
 
@@ -37,9 +37,9 @@ services:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
-      - "5000:5000"
+      - "${ACUMOS_ELK_API_LOGSTASH_PORT}:5000"
     environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      LS_JAVA_OPTS: "-Xmx${ACUMOS_ELK_API_JAVA_HEAP_SIZE} -Xms${ACUMOS_ELK_API_JAVA_HEAP_SIZE}"
     networks:
       - elk
     depends_on:
@@ -50,7 +50,7 @@ services:
     volumes:
       - ./kibana/config/:/usr/share/kibana/config
     ports:
-      - "5601:5601"
+      - "${ACUMOS_ELK_API_KIBANA_PORT}:5601"
     networks:
       - elk
     depends_on:
