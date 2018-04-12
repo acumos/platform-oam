@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a15e0e79_2be10d46",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-12T12:55:03Z",
+      "side": 1,
+      "message": "When you use the docker \"ports\" directive the host (the machine where docker daemon runs) allows access.  This means that in the absence of a firewall, the whole world can access it.  Can you use instead the \"expose\" directive so that the port is only opened to other docker containers?",
+      "revId": "f1f773c6d24fc7e00774eab505b123d9decb7ce3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
