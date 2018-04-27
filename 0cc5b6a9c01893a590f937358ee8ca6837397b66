@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "316fabcc_20265855",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-27T13:09:40Z",
+      "side": 1,
+      "message": "Please use ports OR expose. Do not specify both.  \n\nExpose just opens ports to other docker containers.\n\nPorts opens ports to the world.\n\nIs it really required for the entire internet to have access to the elastic search instance? \n\nShould the whole internet have access to the logstash instance?\n\nI think this is unnecessarily insecure and should be checked carefully.",
+      "revId": "0cc5b6a9c01893a590f937358ee8ca6837397b66",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
