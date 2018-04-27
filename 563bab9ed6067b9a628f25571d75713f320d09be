@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c73a3d1d_fa9f9727",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-27T11:51:47Z",
+      "side": 1,
+      "message": "These are backwards. mx is max, you used MIN.  ms is min, you used MAX.",
+      "revId": "563bab9ed6067b9a628f25571d75713f320d09be",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c0cfaf9e_08fd732f",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-27T11:51:47Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "563bab9ed6067b9a628f25571d75713f320d09be",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a94f6fa_e4c1fc3f",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-27T11:51:47Z",
+      "side": 1,
+      "message": "Why is this bridged?",
+      "revId": "563bab9ed6067b9a628f25571d75713f320d09be",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "393be92c_62505ad3",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-04-27T11:51:47Z",
+      "side": 1,
+      "message": "What about logs?",
+      "revId": "563bab9ed6067b9a628f25571d75713f320d09be",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
