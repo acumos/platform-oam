@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a193d375_836bfd67",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-05-02T17:31:47Z",
+      "side": 1,
+      "message": "This is not defined for other components. Why is it needed here? If not essential, please remove.",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 27
+      },
+      "revId": "67dcbe0568530a90b32402a680e780d283b6cca1",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e29bb783_702b6320",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-05-02T17:31:47Z",
+      "side": 1,
+      "message": "Please change to ACUMOS_ELK_ELASTICSEARCH_PORT. I established a convention for this in https://github.com/acumos/system-integration/blob/master/AIO/acumos-env.sh and recommend this be aligned with that way of naming the port env parameters.",
+      "range": {
+        "startLine": 30,
+        "startChar": 10,
+        "endLine": 30,
+        "endChar": 55
+      },
+      "revId": "67dcbe0568530a90b32402a680e780d283b6cca1",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "170fba80_b91c2a03",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-05-02T17:31:47Z",
+      "side": 1,
+      "message": "Please change to ACUMOS_ELK_NODES_PORT.",
+      "range": {
+        "startLine": 32,
+        "startChar": 10,
+        "endLine": 32,
+        "endChar": 56
+      },
+      "revId": "67dcbe0568530a90b32402a680e780d283b6cca1",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0ae700ca_6fc36964",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-05-02T17:31:47Z",
+      "side": 1,
+      "message": "Please change to ACUMOS_ELK_LOGSTASH_PORT.",
+      "range": {
+        "startLine": 45,
+        "startChar": 11,
+        "endLine": 45,
+        "endChar": 39
+      },
+      "revId": "67dcbe0568530a90b32402a680e780d283b6cca1",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d4f00a0d_b31263a1",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 93
+      },
+      "writtenOn": "2018-05-02T17:31:47Z",
+      "side": 1,
+      "message": "Please change to ACUMOS_ELK_KIBANA_PORT.",
+      "range": {
+        "startLine": 59,
+        "startChar": 11,
+        "endLine": 59,
+        "endChar": 37
+      },
+      "revId": "67dcbe0568530a90b32402a680e780d283b6cca1",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
