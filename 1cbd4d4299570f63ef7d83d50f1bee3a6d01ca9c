@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a15fff56_6bca2b61",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-02T15:26:21Z",
+      "side": 1,
+      "message": "Which of these dockers should be accessible by (provides services to) a user out in the wild internet?  Which of these dockers should be accessible only to other dockers?  \n\nStated differently, which docker is a web server with a dashboard for web browsers; and which docker is/are data source(s) read by the dashboard?\n\nI really, REALLY don\u0027t think logstash should be accessible via \"ports\" to the wild internets. Please educate me.",
+      "revId": "1cbd4d4299570f63ef7d83d50f1bee3a6d01ca9c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
