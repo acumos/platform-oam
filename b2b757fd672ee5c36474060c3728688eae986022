@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30534a6c_22ce517f",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-03T13:59:38Z",
+      "side": 1,
+      "message": "I think you can use expose here, not ports.",
+      "revId": "b2b757fd672ee5c36474060c3728688eae986022",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fb40eec_c44fb7d6",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-03T13:59:38Z",
+      "side": 1,
+      "message": "I think you can use expose here, not ports.",
+      "revId": "b2b757fd672ee5c36474060c3728688eae986022",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1c09036_b86d58b9",
+        "filename": "elk-stack/docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-03T13:59:38Z",
+      "side": 1,
+      "message": "Here ports is the appropriate configuration.",
+      "revId": "b2b757fd672ee5c36474060c3728688eae986022",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
