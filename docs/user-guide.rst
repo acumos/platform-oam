@@ -48,6 +48,7 @@ Elastic Stack Component Versions
 - kibana:5.5.1
 - logstash:5.5.1
 - filebeat:6.0.1
+- metricbeat:6.2.4
 
 Elastic Stack Setup
 -------------------
@@ -112,6 +113,33 @@ Add the configuration below to the docker-compose where the Acumos is installed.
 		 - LOGSTASH_PORT=5000
 
 
+Metricbeat setup steps:
+---------------------
+Metricbeat should be installed as an agent on the servers on which Acumos is running.
+Add the configuration below to the docker-compose where the Acumos is installed. 
+
+.. code:: yaml
+
+   metricbeat:
+       image: <metricbeat-image-name>
+       network_mode: host
+       volumes:
+       #Mount the docker, filesystem to enable Metricbeat to monitor the host rather than the Metricbeat container.
+         - /proc:/hostfs/proc:ro
+         - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+         - /:/hostfs:ro
+         - /var/run:/var/run:rw
+         - /var/run/docker.sock:/var/run/docker.sock
+       command: metricbeat -e -strict.perms=false -system.hostfs=/hostfs
+       environment:
+         - SHIPPER_NAME=DOCKY
+         - ELASTICSEARCH_HOST=cognita-dev1-logcollector
+         - ELASTICSEARCH_PORT=9200
+         - PROCS=.*
+         - PERIOD=10s
+         - SHIPPER_NAME=super-app
+ 
+ 
 Adding a New Log
 ----------------
 Filebeat docker is a customized image that depends on filebeat.yml, a configuration layer. 
