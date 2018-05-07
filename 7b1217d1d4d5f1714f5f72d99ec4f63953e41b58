@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba1f49a1_7f9b7561",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-05-07T16:24:28Z",
+      "side": 1,
+      "message": "please use a generic example here, not a cognita-specific one",
+      "range": {
+        "startLine": 136,
+        "startChar": 30,
+        "endLine": 136,
+        "endChar": 55
+      },
+      "revId": "7b1217d1d4d5f1714f5f72d99ec4f63953e41b58",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
