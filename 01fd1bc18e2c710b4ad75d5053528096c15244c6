@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c280bbdd_016706eb",
+        "filename": "elk-stack/acumos-elk-env.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-08T20:01:45Z",
+      "side": 1,
+      "message": "Remove ALL occurrences of Cognita from here",
+      "revId": "01fd1bc18e2c710b4ad75d5053528096c15244c6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "05c33d26_7717fb11",
+        "filename": "elk-stack/logstash/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-08T20:01:45Z",
+      "side": 1,
+      "message": "Remove, don\u0027t comment out",
+      "revId": "01fd1bc18e2c710b4ad75d5053528096c15244c6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b2822f7_4edb596c",
+        "filename": "elk-stack/logstash/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-08T20:01:45Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "01fd1bc18e2c710b4ad75d5053528096c15244c6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2866e27b_281fe0e1",
+        "filename": "elk-stack/logstash/mariadb-java-client-2.1.0.jar",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-08T20:01:45Z",
+      "side": 1,
+      "message": "This file must not be committed",
+      "revId": "01fd1bc18e2c710b4ad75d5053528096c15244c6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ee18eefb_a9eff4f0",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-08T20:01:45Z",
+      "side": 1,
+      "message": "add license header",
+      "revId": "01fd1bc18e2c710b4ad75d5053528096c15244c6",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
