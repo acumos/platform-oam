@@ -17,6 +17,8 @@
 # ===============LICENSE_END=========================================================
 # https://github.com/elastic/logstash-docker
 FROM docker.elastic.co/logstash/logstash:5.5.1
+RUN /usr/share/logstash/bin/logstash-plugin install logstash-input-jdbc
+COPY /mariadb-java-client-2.1.0.jar /usr/share/logstash/vendor/bundle/
 #FROM docker.elastic.co/logstash/logstash:6.0.1
 
 # Add your logstash plugins setup here
