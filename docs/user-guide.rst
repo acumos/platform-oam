@@ -79,6 +79,8 @@ Steps
 
 .. code:: bash
 
+   $ cd elk-stack
+
    $ ./docker-compose-elk.sh build
 
 
