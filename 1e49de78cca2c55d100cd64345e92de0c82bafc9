@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc9ee787_2573500a",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Is this a hardcoded user name? Please remove",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fbbfd6e_bd67b7c1",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Is this a hardcoded password?  Please remove",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cedde16_1b862ee6",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "This checks the JDBC connection every minute?",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1dc619f3_badc2b54",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a3d8ee6_45d88d73",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "486d903c_79571e05",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8faebf6b_8abde306",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "65d17a74_78c1b085",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T13:40:21Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "1e49de78cca2c55d100cd64345e92de0c82bafc9",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
