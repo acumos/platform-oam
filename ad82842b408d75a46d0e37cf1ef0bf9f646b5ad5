@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "08c6738c_81351600",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "You probably should do unique by user.  If a user downloads the same solution 100 times it looks the same as 100 users downloading 1 solution.  But those are VERY different.",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cbb82714_78c477de",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "This should select the number of ACTIVE users, not all.",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c7904da5_83188d47",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "Again do unique by user and destination.  A user might request deployment 10 times before it works.",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "682d94cb_ec112301",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "This should be active solutions, right?  Deleted solutions are not that interesting.",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf3dd90d_811878fc",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "And active",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "90be4ce1_2d2fea1c",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "And active",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "59c36ec6_6f9e94d2",
+        "filename": "elk-stack/logstash/pipeline/logstash.conf",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-14T14:56:09Z",
+      "side": 1,
+      "message": "And active",
+      "revId": "ad82842b408d75a46d0e37cf1ef0bf9f646b5ad5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
