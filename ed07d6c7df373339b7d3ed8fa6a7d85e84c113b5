@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bca6e129_b1290199",
+        "filename": "elk-stack/logstash/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-16T19:28:12Z",
+      "side": 1,
+      "message": "This dockerfile does not pull in your new JSON config file, why not?",
+      "revId": "ed07d6c7df373339b7d3ed8fa6a7d85e84c113b5",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
