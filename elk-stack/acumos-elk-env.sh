@@ -36,13 +36,4 @@ export ACUMOS_ELK_ES_JAVA_HEAP_MAX_SIZE=1g
 export ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE=1g
 export ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE=1g
 
-# JDBC Parameters
-host=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
-export ACUMOS_ELK_JDBC_DRIVER_LIBRARY=/usr/share/logstash/vendor/bundle/mariadb-java-client-2.1.0.jar
-export ACUMOS_ELK_JDBC_DRIVER_CLASS=org.mariadb.jdbc.Driver
-export ACUMOS_ELK_DATABASE_PORT=3306
-export ACUMOS_ELK_DATABASE_NAME=cds1140m_upd
-export ACUMOS_ELK_DATABASE_URL=$host
-export ACUMOS_ELK_JDBC_CONNECTION_STRING=jdbc:mariadb://$ACUMOS_ELK_DATABASE_URL:$ACUMOS_ELK_DATABASE_PORT/$ACUMOS_ELK_DATABASE_NAME
-export ACUMOS_ELK_JDBC_USERNAME=cds_report
-export ACUMOS_ELK_JDBC_PASSWORD=cds_report
+export ACUMOS_ELK_HOST=elk-stack-host-hostname
