@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "52ad948f_95a3ab1f",
+        "filename": "elk-stack/logstash/Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-05-17T19:10:42Z",
+      "side": 1,
+      "message": "Please remove these ENV vars they don\u0027t help here",
+      "revId": "c6456f39b70b38de9e4dece573119ec93e0b7904",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
