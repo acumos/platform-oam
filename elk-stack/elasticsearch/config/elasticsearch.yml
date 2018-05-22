@@ -41,3 +41,8 @@ xpack.monitoring.enabled: false
 xpack.ml.enabled: false
 xpack.graph.enabled: false
 xpack.watcher.enabled: false
+
+##  Threshold value for disk storage , low and high watermark value.
+cluster.routing.allocation.disk.threshold_enabled: true
+cluster.routing.allocation.disk.watermark.low: 5gb
+cluster.routing.allocation.disk.watermark.high: 2gb
