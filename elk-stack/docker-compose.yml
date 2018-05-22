@@ -20,8 +20,7 @@ version: '2'
 services:
 
   elasticsearch:
-    build: elasticsearch/
-    container_name: acumos-elasticsearch
+    image:  "${NEXUS3_STAGING_REGISTRY_LF}/${ELASTICSEARCH_IMAGE}"
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - acumos-esdata:/usr/share/elasticsearch/data
@@ -36,8 +35,7 @@ services:
       - elk
 
   logstash:
-    build: logstash/
-    container_name: acumos-logstash
+    image:  "${NEXUS3_STAGING_REGISTRY_LF}/${LOGSTASH_IMAGE}"
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./logstash/pipeline:/usr/share/logstash/pipeline
@@ -46,14 +44,18 @@ services:
       - "${ACUMOS_ELK_LOGSTASH_PORT}:5000"
     environment:
       LS_JAVA_OPTS: "-Xmx${ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE} -Xms${ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE}"
+      ACUMOS_ELK_JDBC_DRIVER_LIBRARY: "/usr/share/logstash/vendor/bundle/mariadb-java-client-2.1.0.jar"
+      ACUMOS_ELK_JDBC_DRIVER_CLASS: "org.mariadb.jdbc.Driver"
+      ACUMOS_ELK_JDBC_CONNECTION_STRING: "jdbc:mariadb://databaseurl:port/databasename"
+      ACUMOS_ELK_JDBC_USERNAME: "username"
+      ACUMOS_ELK_JDBC_PASSWORD: "password"
     networks:
       - elk
     depends_on:
       - elasticsearch
 
   kibana:
-    build: kibana/
-    container_name: acumos-kibana
+    image:  "${NEXUS3_STAGING_REGISTRY_LF}/${KIBANA_IMAGE}"
     volumes:
       - ./kibana/config/:/usr/share/kibana/config
     ports:

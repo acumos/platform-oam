@@ -37,3 +37,11 @@ export ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE=1g
 export ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE=1g
 
 export ACUMOS_ELK_HOST=elk-stack-host-hostname
+
+#Staging
+export NEXUS3_STAGING_REGISTRY_LF=nexus3.acumos.org:10004
+
+# Images
+export ELASTICSEARCH_IMAGE=acumos-elasticsearch:1.0.1
+export LOGSTASH_IMAGE=acumos-logstash:1.0.1
+export KIBANA_IMAGE=acumos-kibana:1.0.1
