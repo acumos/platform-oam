@@ -29,7 +29,7 @@
 metricbeat.config.modules:
 #Modules are enabled by reading the .modules.d sub directory. Changes to these will automatically be detected and reflected.
   path: ${path.config}/modules.d/*.yml
-  reload.period: 10s
+  reload.period: 50s
   reload.enabled: true
 
 metricbeat.modules:

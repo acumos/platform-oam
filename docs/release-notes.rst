@@ -20,6 +20,11 @@
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
 
+Version 1.1.0, 27 June 2018
+----------------------------
+
+-  Increasing the reload interval for metricbeat
+
 Version 1.0.0, 7 May 2018
 =========================
 
