@@ -16,7 +16,7 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 - module: system
-  period: 10s
+  period: 50s
   metricsets:
     - cpu
     - load
@@ -33,7 +33,7 @@
     by_memory: 5   # include top 5 processes by memory
 
 - module: system
-  period: 1m
+  period: 5m
   metricsets:
     - filesystem
     - fsstat
@@ -42,7 +42,7 @@
       system.filesystem.mount_point: '^/(sys|cgroup|proc|dev|etc|host|lib)($|/)'
 
 - module: system
-  period: 15m
+  period: 45m
   metricsets:
     - uptime
 
