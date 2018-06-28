@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8191f2d_08fa9d56",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-06-28T13:29:15Z",
+      "side": 1,
+      "message": "This is a minor thing -- suggest you use hyphens here not equal signs because at the top you use level 1 (\u003d\u003d\u003d\u003d) so these should all be level 2 (-----)",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 29
+      },
+      "revId": "2f46fde00d1db191523713dbd5871a48380db839",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
