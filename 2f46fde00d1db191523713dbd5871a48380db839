@@ -22,6 +22,30 @@
       "revId": "2f46fde00d1db191523713dbd5871a48380db839",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "60e7ab07_8817cac3",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2018-06-28T14:11:54Z",
+      "side": 1,
+      "message": "fixed",
+      "parentUuid": "c8191f2d_08fa9d56",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 29
+      },
+      "revId": "2f46fde00d1db191523713dbd5871a48380db839",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
     }
   ]
 }
