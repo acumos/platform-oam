@@ -1,0 +1,52 @@
+---
+project: 'platform-oam'
+project_creation_date: '2017-11-17'
+project_category: ''
+lifecycle_state: 'Incubation'
+project_lead: &acumos_platform-oam_ptl
+    name: 'Bryan Sullivan'
+    email: 'bryan.sullivan@att.com'
+    id: 'blsaws'
+    company: 'ATT'
+    timezone: ''
+primary_contact: '*acumos_training_ptl'
+issue_tracking:
+    type: 'jira'
+    url: 'https://jira.acumos.org/projects/ACUMOS'
+    key: 'ACUMOS'
+mailing_list:
+    type: 'groups.io'
+    url: 'lists.acumos.org'
+    tag: '<[sub-project_name]>'
+realtime_discussion:
+    type: 'irc'
+    server: 'freenode.net'
+    channel: '#lf-releng'
+meetings:
+    - type: 'zoom'
+      agenda: ''
+      url: ''
+      server: 'n/a'
+      channel: 'n/a'
+      repeats: 'n/a'
+      time: 'n/a'
+repositories:
+    - 'platform-oam'
+committers:
+    - <<: *acumos_platform-oam_ptl
+    - name: 'Aimee Ukasick'
+      email: 'aimeeu@research.att.com'
+      company: 'ATT'
+      id: 'aimeeu'
+      timezone: ''
+    - name: 'Parichay Gupta'
+      email: 'pg0057291@techmahindra.com'
+      company: 'TechMahindra'
+      id: 'parichay12'
+      timezone: ''
+tsc:
+    approval: ''
+    changes:
+        - type: ''
+          name: ''
+          link: ''
