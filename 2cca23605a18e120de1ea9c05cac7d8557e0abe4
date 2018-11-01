@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e878befa_c8e2ce0c",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2018-11-01T17:23:23Z",
+      "side": 1,
+      "message": "which versions? or doesn\u0027t it matter (I would assume Docker has to be 18.06.1)",
+      "range": {
+        "startLine": 74,
+        "startChar": 0,
+        "endLine": 74,
+        "endChar": 111
+      },
+      "revId": "2cca23605a18e120de1ea9c05cac7d8557e0abe4",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
