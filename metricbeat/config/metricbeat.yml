@@ -120,6 +120,12 @@ setup.template.name: "metricbeat-%{[beat.version]}"
 setup.template.pattern: "metricbeat-%{[beat.version]}-*"
 index: "metricbeat-%{[beat.version]}-%{+yyyy.MM.dd}"
 
+#============================== Kibana =====================================
+# Starting with Beats version 6.0.0, the dashboards are loaded via the Kibana API.
+# This requires a Kibana endpoint configuration.
+setup.kibana.host: "${ELASTICSEARCH_HOST}:5601"
+
+
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
 

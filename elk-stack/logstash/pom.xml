@@ -25,5 +25,5 @@
         <!-- docker image name -->
         <artifactId>acumos-logstash</artifactId>
         <!-- docker tag -->
-        <version>1.18.2-SNAPSHOT</version>
+        <version>1.18.3-SNAPSHOT</version>
 </project>

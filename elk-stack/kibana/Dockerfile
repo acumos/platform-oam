@@ -16,6 +16,7 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 # https://github.com/elastic/kibana-docker
-FROM docker.elastic.co/kibana/kibana:5.5.1
+FROM docker.elastic.co/kibana/kibana-oss:6.4.3
+COPY /config/kibana.yml /usr/share/logstash/config/kibana.yml
 # Add your kibana plugins setup here
 # Example: RUN kibana-plugin install <name|url>
