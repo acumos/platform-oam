@@ -277,6 +277,29 @@
     },
     {
       "key": {
+        "uuid": "797ac76e_3df3339f",
+        "filename": "logging-demo/demo/src/main/resources/logback.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:28:43Z",
+      "side": 1,
+      "message": "Do you want the component name in the output, or not??",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 158
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f56cd5d6_3d11c0bb",
         "filename": "logging-demo/demo/src/main/resources/logback.xml",
         "patchSetId": 1
