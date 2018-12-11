@@ -1,0 +1,319 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "69e6d633_cabe4c8f",
+        "filename": "logging-demo/demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "This should be org.acumos.platform-oam",
+      "range": {
+        "startLine": 25,
+        "startChar": 10,
+        "endLine": 25,
+        "endChar": 21
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b3dab856_2c34590d",
+        "filename": "logging-demo/demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "This should be logging-demo",
+      "range": {
+        "startLine": 26,
+        "startChar": 13,
+        "endLine": 26,
+        "endChar": 17
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5dbdf0_20933bda",
+        "filename": "logging-demo/demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Probably not going to use WAR with Spring-Boot.",
+      "range": {
+        "startLine": 28,
+        "startChar": 12,
+        "endLine": 28,
+        "endChar": 15
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18ce4bb1_4659d1c2",
+        "filename": "logging-demo/demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "This should not be necessary",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 54
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e75d58ff_483b88a3",
+        "filename": "logging-demo/demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Do you actually depend on GSON?  Can you scrub these dependencies please?",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 51
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8734088e_382aa5aa",
+        "filename": "logging-demo/demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Why do you repeat everything in dependencyManagement section?",
+      "range": {
+        "startLine": 95,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 32
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8eb3b71b_dd1f62e6",
+        "filename": "logging-demo/demo/src/main/java/org/acumos/demo/logging/Application.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Please fix indentation/format",
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c44c4501_8191a2f0",
+        "filename": "logging-demo/demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Is this class required for all components that will implement the logging standard, or is it just a demonstration?",
+      "range": {
+        "startLine": 35,
+        "startChar": 7,
+        "endLine": 35,
+        "endChar": 12
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "218893f1_51263c52",
+        "filename": "logging-demo/demo/src/main/java/org/acumos/demo/logging/LoggingTaskDecorator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Please add a comment to explain this! Looks important",
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f3f5ac2_7e2066ce",
+        "filename": "logging-demo/demo/src/main/java/org/acumos/demo/logging/service/ApplicationService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "So this is just an example of a service that calls log features?",
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a18efa88_255b8345",
+        "filename": "logging-demo/demo/src/main/java/org/acumos/demo/logging/service/ApplicationService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Maybe this should be \"log-demo\"?",
+      "range": {
+        "startLine": 36,
+        "startChar": 54,
+        "endLine": 36,
+        "endChar": 63
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0b8aea94_dd6fb04c",
+        "filename": "logging-demo/demo/src/main/resources/application.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Why add an empty file?",
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3d20beb2_74204ca1",
+        "filename": "logging-demo/demo/src/main/resources/logback.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Maybe it doesn\u0027t need to be so deeply nested?",
+      "range": {
+        "startLine": 30,
+        "startChar": 64,
+        "endLine": 30,
+        "endChar": 75
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f56cd5d6_3d11c0bb",
+        "filename": "logging-demo/demo/src/main/resources/logback.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "Wow 3GB is enormous for compressed log files.  You really want that much?  Is this the recommendation for all components?",
+      "range": {
+        "startLine": 71,
+        "startChar": 20,
+        "endLine": 71,
+        "endChar": 22
+      },
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "59b66674_b065a99d",
+        "filename": "logging-demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-11T18:25:37Z",
+      "side": 1,
+      "message": "remove unused code don\u0027t comment out",
+      "revId": "bd9738271e8a05956f9091f9bce6a458bfa3bc6c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
