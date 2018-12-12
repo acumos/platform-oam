@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ab22b30d_2c85d900",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-12T15:38:44Z",
+      "side": 1,
+      "message": "Needs to be \"jar\".  Tests don\u0027t run against a pom-packaged module.",
+      "range": {
+        "startLine": 28,
+        "startChar": 12,
+        "endLine": 28,
+        "endChar": 15
+      },
+      "revId": "314c196c12a27357026b125223a8e0466e00cbe0",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b44f4be_58f70367",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-12-12T15:38:44Z",
+      "side": 1,
+      "message": "you can drop this",
+      "range": {
+        "startLine": 44,
+        "startChar": 8,
+        "endLine": 44,
+        "endChar": 48
+      },
+      "revId": "314c196c12a27357026b125223a8e0466e00cbe0",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
