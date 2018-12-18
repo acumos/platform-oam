@@ -20,6 +20,11 @@
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
 
+Version 2.0.0, 18 December 2018
+-------------------------------
+* kibana dashboard verbose logstash logs are crashing the log server (`ACUMOS-2151 <https://jira.acumos.org/browse/ACUMOS-2151>`_)
+* Upgrade ELK ,Filebeat, Metricbeat to version 6.x (`ACUMOS-1999 <https://jira.acumos.org/browse/ACUMOS-1999>`_)
+
 Version 1.18.2, 1 October 2018
 ------------------------------
 

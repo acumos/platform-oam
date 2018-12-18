@@ -31,11 +31,12 @@ export ACUMOS_ELK_LOGSTASH_PORT=5000
 export ACUMOS_ELK_KIBANA_PORT=5601
 
 # Java heap size
-export ACUMOS_ELK_ES_JAVA_HEAP_MIN_SIZE=1g
-export ACUMOS_ELK_ES_JAVA_HEAP_MAX_SIZE=2g
-export ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE=1g
-export ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE=2g
+export ACUMOS_ELK_ES_JAVA_HEAP_MIN_SIZE=4g
+export ACUMOS_ELK_ES_JAVA_HEAP_MAX_SIZE=4g
+export ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE=4g
+export ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE=4g
 
+#Below elk-stack-host-hostname needs to be updated with the log collector VM
 export ACUMOS_ELK_HOST=elk-stack-host-hostname
 
 # Should ONLY use Staging, if Release version not available or compatible
@@ -45,6 +46,6 @@ export NEXUS3_STAGING_REGISTRY_LF=nexus3.acumos.org:10004
 export NEXUS3_RELEASE_REGISTRY_LF=nexus3.acumos.org:10002
 
 # Images
-export ELASTICSEARCH_IMAGE=acumos-elasticsearch:1.0.1
-export LOGSTASH_IMAGE=acumos-logstash:1.0.1
-export KIBANA_IMAGE=acumos-kibana:1.0.1
+export ELASTICSEARCH_IMAGE=acumos-elasticsearch:2.0.0
+export LOGSTASH_IMAGE=acumos-logstash:2.0.0
+export KIBANA_IMAGE=acumos-kibana:2.0.0
