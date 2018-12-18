@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a7c31198_8d81edf3",
+        "filename": "elk-stack/elasticsearch/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2018-12-18T18:00:37Z",
+      "side": 1,
+      "message": "version should be 2.0.0",
+      "range": {
+        "startLine": 28,
+        "startChar": 17,
+        "endLine": 28,
+        "endChar": 23
+      },
+      "revId": "07cb65c36901264115020f7cbd38c1e216faff76",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79386f7a_dd887ca1",
+        "filename": "elk-stack/kibana/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2018-12-18T18:00:37Z",
+      "side": 1,
+      "message": "version should be 2.0.0",
+      "range": {
+        "startLine": 28,
+        "startChar": 17,
+        "endLine": 28,
+        "endChar": 23
+      },
+      "revId": "07cb65c36901264115020f7cbd38c1e216faff76",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a5daf13_31b4da56",
+        "filename": "elk-stack/logstash/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2018-12-18T18:00:37Z",
+      "side": 1,
+      "message": "version should be 2.0.0",
+      "range": {
+        "startLine": 28,
+        "startChar": 17,
+        "endLine": 28,
+        "endChar": 23
+      },
+      "revId": "07cb65c36901264115020f7cbd38c1e216faff76",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "601c494f_fbc2596c",
+        "filename": "filebeat/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2018-12-18T18:00:37Z",
+      "side": 1,
+      "message": "version should be 2.0.0",
+      "range": {
+        "startLine": 28,
+        "startChar": 17,
+        "endLine": 28,
+        "endChar": 23
+      },
+      "revId": "07cb65c36901264115020f7cbd38c1e216faff76",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b312a3f_7bc72181",
+        "filename": "metricbeat/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2018-12-18T18:00:37Z",
+      "side": 1,
+      "message": "version should be 2.0.0",
+      "range": {
+        "startLine": 28,
+        "startChar": 17,
+        "endLine": 28,
+        "endChar": 32
+      },
+      "revId": "07cb65c36901264115020f7cbd38c1e216faff76",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
