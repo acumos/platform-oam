@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cef2f371_b6c0c8f8",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T17:02:25Z",
+      "side": 1,
+      "message": "please undo the format of this block comment.  Alas Eclipse gets this wrong :(",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 95
+      },
+      "revId": "e3529807a69c4033c2fa4ce4050807d59fb48942",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a204345_e6654610",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T17:02:25Z",
+      "side": 1,
+      "message": "I think you want to use something like \"put.your.host.name.here\" to make it leap out at people",
+      "range": {
+        "startLine": 50,
+        "startChar": 29,
+        "endLine": 50,
+        "endChar": 60
+      },
+      "revId": "e3529807a69c4033c2fa4ce4050807d59fb48942",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "755d8d6d_cf597805",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T17:02:25Z",
+      "side": 1,
+      "message": "Parichay I gave bad advice here.  I think the MDC should be just \"RequestID\" as it was before.",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 63
+      },
+      "revId": "e3529807a69c4033c2fa4ce4050807d59fb48942",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
