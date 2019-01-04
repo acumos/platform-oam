@@ -1,0 +1,308 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f95140b6_36a85d66",
+        "filename": "logging-demo/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "POC (not poc)",
+      "range": {
+        "startLine": 3,
+        "startChar": 26,
+        "endLine": 3,
+        "endChar": 29
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9962f9a8_f9b56152",
+        "filename": "logging-demo/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Maybe this could be 2019?",
+      "range": {
+        "startLine": 9,
+        "startChar": 17,
+        "endLine": 9,
+        "endChar": 18
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9dfebfb0_dbf0df17",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "please remove, not used in this POM",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 78
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4d84dfed_f2c60422",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Fix indentation - in Eclipse right-click pick Format",
+      "range": {
+        "startLine": 52,
+        "startChar": 1,
+        "endLine": 53,
+        "endChar": 1
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9bc6395c_718f227c",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Also indentation",
+      "range": {
+        "startLine": 76,
+        "startChar": 1,
+        "endLine": 77,
+        "endChar": 1
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f73daeee_8cf26701",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Please watch trailing whitespace.  Eclipse will fix this automatically via Format.",
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b7a4f220_f35d850f",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Please don\u0027t use an azure FQDN, use something anonymous",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 76
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ccb02f2_44afb28f",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/LoggingTaskDecorator.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Please fix indent - again Eclipse format/source will fix these issues",
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "80a63623_0ccab3a2",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "It\u0027s worth fixing these random whitespace issues because projects will copy this file unchanged, best if they start with a very clean copy.",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 8
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "49c7fbd1_1ca270b9",
+        "filename": "logging-demo/src/main/resources/logback.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Maybe this should be 2019?",
+      "range": {
+        "startLine": 6,
+        "startChar": 19,
+        "endLine": 6,
+        "endChar": 20
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dcb7eb5f_79edfb36",
+        "filename": "logging-demo/src/main/resources/logback.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "This comment is not helpful",
+      "range": {
+        "startLine": 27,
+        "startChar": 60,
+        "endLine": 27,
+        "endChar": 82
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ce7c5513_a12ad26f",
+        "filename": "logging-demo/src/main/resources/logback.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Please drop trailing whitespace",
+      "range": {
+        "startLine": 38,
+        "startChar": 51,
+        "endLine": 38,
+        "endChar": 53
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "efff18e5_742b4193",
+        "filename": "logging-demo/src/main/resources/logback.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Please fix indentation",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 22
+      },
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c248b8fe_0227994f",
+        "filename": "logging-demo/src/test/java/com/example/demo/DemoApplicationTests.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T14:36:01Z",
+      "side": 1,
+      "message": "Please add a logger and log output inside this method.  That\u0027s better than a totally empty test.",
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
