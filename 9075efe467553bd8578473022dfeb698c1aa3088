@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e774c029_62a6c0c2",
+        "filename": "logging-demo/src/main/resources/logback.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-01-04T20:56:38Z",
+      "side": 1,
+      "message": "Please note this is belt-and-suspenders (redundant).  Files will be created like logs/platform-oam/OAM/OAM.log.  That\u0027s one \"OAM\" too many for me.",
+      "range": {
+        "startLine": 22,
+        "startChar": 39,
+        "endLine": 22,
+        "endChar": 69
+      },
+      "revId": "9075efe467553bd8578473022dfeb698c1aa3088",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
