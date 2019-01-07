@@ -373,6 +373,24 @@
       "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "56df91a4_9f5e17f0",
+        "filename": "logging-demo/src/test/java/com/example/demo/DemoApplicationTests.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-01-07T16:18:39Z",
+      "side": 1,
+      "message": "Logger output will be displayed on console and in log file as I have included Application class @SpringBootTest(classes \u003d Application.class)",
+      "parentUuid": "c248b8fe_0227994f",
+      "revId": "c671a78eeaa6c05734793b02f0ced78b19cc4b8e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
     }
   ]
 }
