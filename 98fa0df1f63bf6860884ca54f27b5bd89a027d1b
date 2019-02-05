@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e1c59c5_6f1a3e86",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-02-05T19:27:29Z",
+      "side": 1,
+      "message": "Please be consistent with enum formatting",
+      "revId": "98fa0df1f63bf6860884ca54f27b5bd89a027d1b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04448918_89f65140",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2019-02-05T19:27:29Z",
+      "side": 1,
+      "message": "maybe this is too much white space?",
+      "revId": "98fa0df1f63bf6860884ca54f27b5bd89a027d1b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
