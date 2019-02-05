@@ -21,6 +21,7 @@ package org.acumos.demo.logging;
 
 import java.util.UUID;
 import org.acumos.demo.logging.service.ApplicationService;
+import org.acumos.demo.logging.util.ACUMOSLogConstants;
 import org.acumos.demo.logging.util.ACUMOSLogConstants.MDCs;
 import org.slf4j.MDC;
 import org.springframework.boot.CommandLineRunner;
@@ -38,12 +39,8 @@ public class Execute implements CommandLineRunner {
 	public void run(String... args) {
 
 		String txId = UUID.randomUUID().toString();
-
-		MDC.put(MDCs.REQUEST_ID, txId);
-		MDC.put(MDCs.RESPONSE_CODE, "500");
-		MDC.put(MDCs.RESPONSE_DESCRIPTION, "Internal Server Error");
-		MDC.put(MDCs.RESPONSE_SEVERITY, "ERROR");
-		MDC.put(MDCs.STATUS_CODE, "ERROR");
+		ACUMOSLogConstants.setDefaultMDCs();
+		MDC.put(MDCs.REQUEST_ID, txId);		
 		MDC.put(MDCs.TARGET_ENTITY, "Onboarding");
 		MDC.put(MDCs.TARGET_SERVICE_NAME, "Onboarding/api/v2");
 		MDC.put(MDCs.CLIENT_IP_ADDRESS, "127.0.0.1");

@@ -21,6 +21,8 @@ package org.acumos.demo.logging.util;
 
 import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
+import org.slf4j.MDC;
+
 
 /**
  * Constants for standard ACUMOS headers, MDCs, etc.
@@ -120,7 +122,7 @@ public final class ACUMOSLogConstants {
 		/** MDC reporting outcome error level. */
 		public static final String RESPONSE_SEVERITY = "Severity";
 
-		/** MDC reporting outcome error level. */
+		/** MDC reporting outcome status of the request. */
 		public static final String STATUS_CODE = "StatusCode";
 
 		// Unsorted. ///////////////////////////////////////////////////////////
@@ -149,6 +151,16 @@ public final class ACUMOSLogConstants {
 		}
 	}
 
+	/**
+	 * Overrideable method to set MDCs based on property values.
+	 */
+	public static void setDefaultMDCs() {
+		MDC.put(MDCs.RESPONSE_CODE, "200");
+		MDC.put(MDCs.RESPONSE_DESCRIPTION, "200 OK");
+		MDC.put(MDCs.RESPONSE_SEVERITY, ResponseSeverity.INFO.toString());
+		MDC.put(MDCs.STATUS_CODE, ResponseStatus.INPROGRESS.toString());
+	}
+
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//
 	// Enums.
@@ -156,7 +168,7 @@ public final class ACUMOSLogConstants {
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	/**
-	 * Response success or not, for setting <tt>StatusCode</tt>.
+	 * Response success or not, for setting StatusCode.
 	 */
 	public enum ResponseStatus {
 
@@ -168,6 +180,24 @@ public final class ACUMOSLogConstants {
 
 		/** In Progress. */
 		INPROGRESS
+	}
+
+	/**
+	 * Response of log level, for setting Severity.
+	 */
+	public enum ResponseSeverity {
+
+		INFO,
+
+		ERROR,
+
+		TRACE,
+
+		DEBUG,
+
+		WARN,
+
+		FATAL
 	}
 
 	/**
