@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b37b70d_c1fe6345",
+        "filename": "elk-client/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "please change it to 2019 everywhere",
+      "range": {
+        "startLine": 6,
+        "startChar": 16,
+        "endLine": 6,
+        "endChar": 20
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67325e7b_9244f6c2",
+        "filename": "elk-client/src/license/licenses.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "please make it 2019",
+      "range": {
+        "startLine": 5,
+        "startChar": 16,
+        "endLine": 5,
+        "endChar": 20
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06c7a35d_401e627e",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/ElkClientServiceApplication.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "2019 everywhere",
+      "range": {
+        "startLine": 5,
+        "startChar": 17,
+        "endLine": 5,
+        "endChar": 21
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cb405c45_4586398e",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/ElkClientServiceApplication.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "Here\u0027s the right way to fetch a logger:\n    \tprivate static final Logger logger \u003d LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());\n\n\nPlease use this everywhere",
+      "range": {
+        "startLine": 36,
+        "startChar": 1,
+        "endLine": 36,
+        "endChar": 83
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d7f22c2c_a9bfcf17",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/SwaggerConfiguration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "2019 please",
+      "range": {
+        "startLine": 5,
+        "startChar": 17,
+        "endLine": 5,
+        "endChar": 24
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e8a97527_69a2e0ad",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/SwaggerConfiguration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "remove this reference of baeldung site",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 3
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ce7e46ff_7deea7de",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/controller/AbstractController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "2019",
+      "range": {
+        "startLine": 5,
+        "startChar": 17,
+        "endLine": 5,
+        "endChar": 21
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b6722d2_03ed9869",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/service/AbstractELKClientConnection.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "2019 everywhere please",
+      "range": {
+        "startLine": 5,
+        "startChar": 16,
+        "endLine": 5,
+        "endChar": 22
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a8ab1746_444cf4d7",
+        "filename": "elk-client/src/main/resources/logback.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-03-29T14:35:19Z",
+      "side": 1,
+      "message": "This logback.xml file is not following new logging standards. Please implement new log standards",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 48
+      },
+      "revId": "eeb26da1852e3451ebd606b9cf11803fcece73fe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
