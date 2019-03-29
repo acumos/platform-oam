@@ -25,10 +25,15 @@
 # Be verbose
 set -x
 
+export ACUMOS_ELK_ELASTICSEARCH_HOST=elasticsearch-hostname
 export ACUMOS_ELK_ELASTICSEARCH_PORT=9200
 export ACUMOS_ELK_NODE_PORT=9300
 export ACUMOS_ELK_LOGSTASH_PORT=5000
 export ACUMOS_ELK_KIBANA_PORT=5601
+export ACUMOS_ELK_CLIENT_PORT=9600
+
+#Elk client schedule cron job for snapshot creation.
+export ELK_CLIENT_CRONSCHEDULE_CREATESNAPSHOT_TIME=* 1 * * * *
 
 # Java heap size
 export ACUMOS_ELK_ES_JAVA_HEAP_MIN_SIZE=4g
@@ -46,6 +51,7 @@ export NEXUS3_STAGING_REGISTRY_LF=nexus3.acumos.org:10004
 export NEXUS3_RELEASE_REGISTRY_LF=nexus3.acumos.org:10002
 
 # Images
-export ELASTICSEARCH_IMAGE=acumos-elasticsearch:2.0.0
-export LOGSTASH_IMAGE=acumos-logstash:2.0.0
-export KIBANA_IMAGE=acumos-kibana:2.0.0
+export ELASTICSEARCH_IMAGE=acumos-elasticsearch:2.0.8
+export LOGSTASH_IMAGE=acumos-logstash:2.0.8
+export KIBANA_IMAGE=acumos-kibana:2.0.8
+export ELK_CLIENT=2.0.8
