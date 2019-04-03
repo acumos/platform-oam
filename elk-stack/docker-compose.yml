@@ -23,6 +23,7 @@ services:
     image:  ${NEXUS3_RELEASE_REGISTRY_LF}/${ELASTICSEARCH_IMAGE}
     volumes:
       - acumos-esdata:/usr/share/elasticsearch/data
+      - ./snapshot-backup:/backup
     ports:
     #Node client default listens at 9200, metricbeat and logstash index data into Elasticsearch using this port.
      - "${ACUMOS_ELK_ELASTICSEARCH_PORT}:9200"
@@ -68,25 +69,29 @@ services:
       image: ${NEXUS3_RELEASE_REGISTRY_LF}/${ELK_CLIENT}
       environment:
           SPRING_APPLICATION_JSON: '{
-              "server" : { 
+              "server" : {
                    "port" : 9006
                },
                "elk" : {
                    "host" : {
-                       "url":${ACUMOS_ELK_ELASTICSEARCH_HOST}
+                       "url":"${ACUMOS_ELK_ELASTICSEARCH_HOST}"
                    },
                    "elasticssearch" : {
                                "port":${ACUMOS_ELK_ELASTICSEARCH_PORT}
                            },
                    "cronschedule": {
                        "createsnapshot":{
-                           "time":${ELK_CLIENT_CRONSCHEDULE_CREATESNAPSHOT_TIME}
+                           "time":"${ELK_CLIENT_CRONSCHEDULE_CREATESNAPSHOT_TIME}"
                        }
                    }
                }
           }'
       ports:
           - ${ACUMOS_ELK_CLIENT_PORT}:9006
+      volumes:
+          - cognita-logs:/maven/logs
+      logging:
+          driver: json-file
 
 networks:
   elk:
@@ -94,4 +99,6 @@ networks:
 
 volumes:
     acumos-esdata:
+        external: true
+    cognita-logs:
         external: true

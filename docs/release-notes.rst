@@ -22,7 +22,6 @@ Platform Operations, Administration, and Management (OA&M) Release Notes
 
 Version 2.0.8, 29 March 2019
 -------------------------------
-* Add implementation for Platform maintenance support (`ACUMOS-2004 <https://jira.acumos.org/browse/ACUMOS-2004>`_)
 * Add implementation for Platform maintenance support (`ACUMOS-2343 <https://jira.acumos.org/browse/ACUMOS-2343>`_)
 * Add implementation for Platform maintenance support - backend (`ACUMOS-2344 <https://jira.acumos.org/browse/ACUMOS-2344>`_)
 
