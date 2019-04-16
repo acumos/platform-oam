@@ -51,7 +51,7 @@ export NEXUS3_STAGING_REGISTRY_LF=nexus3.acumos.org:10004
 export NEXUS3_RELEASE_REGISTRY_LF=nexus3.acumos.org:10002
 
 # Images
-export ELASTICSEARCH_IMAGE=acumos-elasticsearch:2.0.8
-export LOGSTASH_IMAGE=acumos-logstash:2.0.8
-export KIBANA_IMAGE=acumos-kibana:2.0.8
-export ELK_CLIENT=elk-client:2.0.8
+export ELASTICSEARCH_IMAGE=acumos-elasticsearch:2.0.9
+export LOGSTASH_IMAGE=acumos-logstash:2.0.9
+export KIBANA_IMAGE=acumos-kibana:2.0.9
+export ELK_CLIENT=elk-client:0.0.1

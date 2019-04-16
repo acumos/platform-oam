@@ -88,7 +88,7 @@ services:
       ports:
           - ${ACUMOS_ELK_CLIENT_PORT}:9006
       volumes:
-          - cognita-logs:/maven/logs
+          - acumos-logs:/maven/logs
       logging:
           driver: json-file          
 
@@ -99,6 +99,6 @@ networks:
 volumes:
     acumos-esdata:
         external: true
-    cognita-logs:
+    acumos-logs:
         external: true
         

@@ -83,11 +83,12 @@ Steps
 
    $ git clone https://gerrit.acumos.org/r/platform-oam
 
-2. Create docker volume namely acumos-esdata if no volumes created earlier.If acumos-esdata volume already exist on host machine then skip this step.
+2. Create docker volume namely acumos-esdata and acumos-logs if no volumes created earlier.If acumos-esdata and acumos-logs volume already exist on host machine then skip this step.
    
 .. code:: bash
 
    $ docker volume create acumos-esdata
+   $ docker volume create acumos-logs
    
 3. The acumos-elk-env.sh file is the environment file for ELK stack. Update variables ELASTICSEARCH_IMAGE , LOGSTASH_IMAGE , KIBANA_IMAGE with the latest release image.
 
