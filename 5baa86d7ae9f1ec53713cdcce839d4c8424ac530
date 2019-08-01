@@ -68,6 +68,30 @@
       "revId": "5baa86d7ae9f1ec53713cdcce839d4c8424ac530",
       "serverId": "655300a2-7a56-4504-9153-881edd907bea",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b26ad54_d8d368ad",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-01T16:01:28Z",
+      "side": 1,
+      "message": "This is still not fixed",
+      "parentUuid": "a62f16a1_99665375",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 27
+      },
+      "revId": "5baa86d7ae9f1ec53713cdcce839d4c8424ac530",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
     }
   ]
 }
