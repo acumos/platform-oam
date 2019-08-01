@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dbc207f5_2ed4ac0b",
+        "filename": "docs/elkclient-api-developer-guide.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-01T15:15:58Z",
+      "side": 1,
+      "message": "2019 please",
+      "range": {
+        "startLine": 4,
+        "startChar": 16,
+        "endLine": 4,
+        "endChar": 22
+      },
+      "revId": "5baa86d7ae9f1ec53713cdcce839d4c8424ac530",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2508d5cd_46fd5fa2",
+        "filename": "docs/elkclient-server-api.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-01T15:15:58Z",
+      "side": 1,
+      "message": "please use 2019",
+      "range": {
+        "startLine": 4,
+        "startChar": 13,
+        "endLine": 4,
+        "endChar": 30
+      },
+      "revId": "5baa86d7ae9f1ec53713cdcce839d4c8424ac530",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a62f16a1_99665375",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-01T15:15:58Z",
+      "side": 1,
+      "message": "Please use today\u0027s date for this version",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 27
+      },
+      "revId": "5baa86d7ae9f1ec53713cdcce839d4c8424ac530",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
