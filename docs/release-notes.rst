@@ -20,6 +20,14 @@
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
 
+Version 2.2.4, 11 July 2019
+-------------------------------
+* Update docs for elk-client (`ACUMOS-3308 <https://jira.acumos.org/browse/ACUMOS-3308>`_)
+
+Version 2.2.3, 11 July 2019
+-------------------------------
+* Platform maintenance support - archival (`ACUMOS-2704 <https://jira.acumos.org/browse/ACUMOS-2704>`_)
+
 Version 2.2.2, 18 April 2019
 -------------------------------
 * Metricbeat index archival/purging (`ACUMOS-2065 <https://jira.acumos.org/browse/ACUMOS-2065>`_)
