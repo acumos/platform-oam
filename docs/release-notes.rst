@@ -1,7 +1,7 @@
 .. ===============LICENSE_START=======================================================
 .. Acumos
 .. ===================================================================================
-.. Copyright (C) 2017-2018 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
+.. Copyright (C) 2019 AT&T Intellectual Property & Tech Mahindra. All rights reserved.
 .. ===================================================================================
 .. This Acumos documentation file is distributed by AT&T and Tech Mahindra
 .. under the Creative Commons Attribution 4.0 International License (the "License");
@@ -19,6 +19,14 @@
 ========================================================================
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
+
+Version 2.2.4, 11 July 2019
+-------------------------------
+* Update docs for elk-client (`ACUMOS-3308 <https://jira.acumos.org/browse/ACUMOS-3308>`_)
+
+Version 2.2.3, 11 July 2019
+-------------------------------
+* Platform maintenance support - archival (`ACUMOS-2704 <https://jira.acumos.org/browse/ACUMOS-2704>`_)
 
 Version 2.2.2, 18 April 2019
 -------------------------------

@@ -21,10 +21,13 @@ Platform Operations, Administration, and Management (OA&M)
 ==========================================================
 
 .. toctree::
-       :maxdepth: 2
+   :maxdepth: 2
+   :caption: Contents:
 
-       release-notes
-       developer-guide
-       user-guide
-
-
+   release-notes
+   developer-guide
+   user-guide
+   elkclient-api-developer-guide
+   elkclient-server-api
+   
+* :ref:`search`
