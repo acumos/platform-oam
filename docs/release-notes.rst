@@ -20,6 +20,10 @@
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
 
+Version 3.0.4, 06 September 2019
+-------------------------------
+* Update docs for logging library (`ACUMOS-3070 <https://jira.acumos.org/browse/ACUMOS-3070>`_)
+
 Version 3.0.2, 21 August 2019
 -------------------------------
 * Create Snapshot API (`ACUMOS-3347 <https://jira.acumos.org/browse/ACUMOS-3347>`_)
@@ -96,7 +100,7 @@ Version 1.1.0, 27 June 2018
 
 -  Increasing the reload interval for metricbeat
 
-Version 1.0.0, 7 May 2018
+VersionÂ 1.0.0,Â 7Â MayÂ 2018
 -------------------------
 
 - Increase the ES,LS memory size and made it configurable (ACUMOS-669)
