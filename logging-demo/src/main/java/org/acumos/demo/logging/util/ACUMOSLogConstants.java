@@ -28,7 +28,7 @@ import org.slf4j.MDC;
  * Constants for standard ACUMOS headers, MDCs, etc.
  *
  */
-public final class ACUMOSLogConstants {
+public  class ACUMOSLogConstants {
 
 	/**
 	 * Hide and forbid construction.
@@ -46,25 +46,75 @@ public final class ACUMOSLogConstants {
 	/**
 	 * Marker constants.
 	 */
-	public static final class Markers {
+	public static  class Markers {
 
 		/** Marker reporting invocation. */
-		public static final Marker INVOKE = MarkerFactory.getMarker("INVOKE");
+		public static  Marker INVOKE = MarkerFactory.getMarker("INVOKE");
+
+		
 
 		/** Marker reporting invocation. */
-		public static final Marker INVOKE_RETURN = MarkerFactory.getMarker("INVOKE_RETURN");
+		public static  Marker INVOKE_RETURN = MarkerFactory.getMarker("INVOKE_RETURN");
 
 		/** Marker reporting synchronous invocation. */
-		public static final Marker INVOKE_SYNCHRONOUS = build("INVOKE", "SYNCHRONOUS");
+		public static  Marker INVOKE_SYNCHRONOUS = build("INVOKE", "SYNCHRONOUS");
 
 		/** Marker reporting asynchronous invocation. */
-		public static final Marker INVOKE_ASYNCHRONOUS = build("INVOKE", "ASYNCHRONOUS");
+		public static  Marker INVOKE_ASYNCHRONOUS = build("INVOKE", "ASYNCHRONOUS");
 
 		/** Marker reporting entry into a component. */
-		public static final Marker ENTRY = MarkerFactory.getMarker("ENTRY");
+		public static  Marker ENTRY = MarkerFactory.getMarker("ENTRY");
 
 		/** Marker reporting exit from a component. */
-		public static final Marker EXIT = MarkerFactory.getMarker("EXIT");
+		public static  Marker EXIT = MarkerFactory.getMarker("EXIT");
+		
+		public static Marker getINVOKE() {
+			return INVOKE;
+		}
+
+		public static void setINVOKE(Marker iNVOKE) {
+			INVOKE = iNVOKE;
+		}
+
+		public static Marker getINVOKE_RETURN() {
+			return INVOKE_RETURN;
+		}
+
+		public static void setINVOKE_RETURN(Marker iNVOKE_RETURN) {
+			INVOKE_RETURN = iNVOKE_RETURN;
+		}
+
+		public static Marker getINVOKE_SYNCHRONOUS() {
+			return INVOKE_SYNCHRONOUS;
+		}
+
+		public static void setINVOKE_SYNCHRONOUS(Marker iNVOKE_SYNCHRONOUS) {
+			INVOKE_SYNCHRONOUS = iNVOKE_SYNCHRONOUS;
+		}
+
+		public static Marker getINVOKE_ASYNCHRONOUS() {
+			return INVOKE_ASYNCHRONOUS;
+		}
+
+		public static void setINVOKE_ASYNCHRONOUS(Marker iNVOKE_ASYNCHRONOUS) {
+			INVOKE_ASYNCHRONOUS = iNVOKE_ASYNCHRONOUS;
+		}
+
+		public static Marker getENTRY() {
+			return ENTRY;
+		}
+
+		public static void setENTRY(Marker eNTRY) {
+			ENTRY = eNTRY;
+		}
+
+		public static Marker getEXIT() {
+			return EXIT;
+		}
+
+		public static void setEXIT(Marker eXIT) {
+			EXIT = eXIT;
+		}
 
 		/**
 		 * Build nested, detached marker.
@@ -75,8 +125,8 @@ public final class ACUMOSLogConstants {
 		 *            sub-token.
 		 * @return detached Marker.
 		 */
-		private static Marker build(final String m1, final String m2) {
-			final Marker marker = MarkerFactory.getDetachedMarker(m1);
+		private static Marker build( String m1,  String m2) {
+			 Marker marker = MarkerFactory.getDetachedMarker(m1);
 			marker.add(MarkerFactory.getDetachedMarker(m2));
 			return marker;
 		}
@@ -92,39 +142,132 @@ public final class ACUMOSLogConstants {
 	/**
 	 * MDC name constants.
 	 */
-	public static final class MDCs {
+	public static  class MDCs {
+		
+		public enum ResponseStatus {
+			
+			COMPLETED,
+			ERROR,
+			INPROGRESS
+		}
+		
+		public enum ResponseSeverity {
+
+			INFO,
+			ERROR,
+			TRACE,
+			DEBUG,
+			WARN,
+			FATAL
+		}
+
 
 		// Tracing. ////////////////////////////////////////////////////////////
 
 		/** MDC correlating messages for a logical transaction. */
-		public static final String REQUEST_ID = "RequestID";
+		public static  String REQUEST_ID = "RequestID";
+
+		
 
 		/** MDC recording target service. */
-		public static final String TARGET_SERVICE_NAME = "TargetServiceName";
+		public static  String TARGET_SERVICE_NAME = "TargetServiceName";
 
 		/** MDC recording target entity. */
-		public static final String TARGET_ENTITY = "TargetEntity";
+		public static  String TARGET_ENTITY = "TargetEntity";
 
 		// Network. ////////////////////////////////////////////////////////////
 
 		/** MDC recording caller address. */
-		public static final String CLIENT_IP_ADDRESS = "ClientIPAddress";
+		public static  String CLIENT_IP_ADDRESS = "ClientIPAddress";
 
 		/** MDC recording server address. */
-		public static final String SERVER_FQDN = "ServerFQDN";
+		public static  String SERVER_FQDN = "ServerFQDN";
 
 		/** MDC reporting outcome code. */
-		public static final String RESPONSE_CODE = "ResponseCode";
+		public static  String RESPONSE_CODE = "ResponseCode";
 
 		/** MDC reporting outcome description. */
-		public static final String RESPONSE_DESCRIPTION = "ResponseDescription";
+		public static  String RESPONSE_DESCRIPTION = "ResponseDescription";
 
 		/** MDC reporting outcome error level. */
-		public static final String RESPONSE_SEVERITY = "Severity";
+		public static  String RESPONSE_SEVERITY = "Severity";
 
 		/** MDC reporting outcome status of the request. */
-		public static final String STATUS_CODE = "StatusCode";
+		public static  String STATUS_CODE = "StatusCode";
 
+		public static String getREQUEST_ID() {
+			return REQUEST_ID;
+		}
+
+		public static void setREQUEST_ID(String rEQUEST_ID) {
+			REQUEST_ID = rEQUEST_ID;
+		}
+
+		public static String getTARGET_SERVICE_NAME() {
+			return TARGET_SERVICE_NAME;
+		}
+
+		public static void setTARGET_SERVICE_NAME(String tARGET_SERVICE_NAME) {
+			TARGET_SERVICE_NAME = tARGET_SERVICE_NAME;
+		}
+
+		public static String getTARGET_ENTITY() {
+			return TARGET_ENTITY;
+		}
+
+		public static void setTARGET_ENTITY(String tARGET_ENTITY) {
+			TARGET_ENTITY = tARGET_ENTITY;
+		}
+
+		public static String getCLIENT_IP_ADDRESS() {
+			return CLIENT_IP_ADDRESS;
+		}
+
+		public static void setCLIENT_IP_ADDRESS(String cLIENT_IP_ADDRESS) {
+			CLIENT_IP_ADDRESS = cLIENT_IP_ADDRESS;
+		}
+
+		public static String getSERVER_FQDN() {
+			return SERVER_FQDN;
+		}
+
+		public static void setSERVER_FQDN(String sERVER_FQDN) {
+			SERVER_FQDN = sERVER_FQDN;
+		}
+
+		public static String getRESPONSE_CODE() {
+			return RESPONSE_CODE;
+		}
+
+		public static void setRESPONSE_CODE(String rESPONSE_CODE) {
+			RESPONSE_CODE = rESPONSE_CODE;
+		}
+
+		public static String getRESPONSE_DESCRIPTION() {
+			return RESPONSE_DESCRIPTION;
+		}
+
+		public static void setRESPONSE_DESCRIPTION(String rESPONSE_DESCRIPTION) {
+			RESPONSE_DESCRIPTION = rESPONSE_DESCRIPTION;
+		}
+
+		public static String getRESPONSE_SEVERITY() {
+			return RESPONSE_SEVERITY;
+		}
+
+		public static void setRESPONSE_SEVERITY(String rESPONSE_SEVERITY) {
+			RESPONSE_SEVERITY = rESPONSE_SEVERITY;
+		}
+
+		public static String getSTATUS_CODE() {
+			return STATUS_CODE;
+		}
+
+		public static void setSTATUS_CODE(String sTATUS_CODE) {
+			STATUS_CODE = sTATUS_CODE;
+		}
+		
+		
 		// Unsorted. ///////////////////////////////////////////////////////////
 
 		/**
@@ -138,10 +281,10 @@ public final class ACUMOSLogConstants {
 	/**
 	 * Header name constants.
 	 */
-	public static final class Headers {
+	public static  class Headers {
 
 		/** HTTP X-ACUMOS-RequestID header. */
-		public static final String REQUEST_ID = "X-ACUMOS-RequestID";
+		public static  String REQUEST_ID = "X-ACUMOS-RequestID";
 
 		/**
 		 * Hide and forbid construction.
@@ -204,6 +347,22 @@ public final class ACUMOSLogConstants {
 
 		/** Corresponding marker. */
 		private Marker mMarker;
+		
+		public String getmString() {
+			return mString;
+		}
+
+		public void setmString(String mString) {
+			this.mString = mString;
+		}
+
+		public Marker getmMarker() {
+			return this.mMarker;
+		}
+
+		public void setmMarker(Marker mMarker) {
+			this.mMarker = mMarker;
+		}
 
 		/**
 		 * Construct enum.
@@ -213,7 +372,7 @@ public final class ACUMOSLogConstants {
 		 * @param m
 		 *            corresponding Marker.
 		 */
-		InvocationMode(final String s, final Marker m) {
+		InvocationMode( String s,  Marker m) {
 			this.mString = s;
 			this.mMarker = m;
 		}
@@ -223,10 +382,7 @@ public final class ACUMOSLogConstants {
 		 *
 		 * @return Marker.
 		 */
-		public Marker getMarker() {
-			return this.mMarker;
-		}
-
+		
 		@Override
 		public String toString() {
 			return this.mString;
