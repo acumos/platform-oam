@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3312da1_ed5e9090",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-26T15:46:16Z",
+      "side": 1,
+      "message": "put todays date 26",
+      "range": {
+        "startLine": 23,
+        "startChar": 15,
+        "endLine": 23,
+        "endChar": 17
+      },
+      "revId": "4ecc0051a7ed7d9841e657266bf903b3e6ce825d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "05916f80_edfebc44",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-26T15:46:16Z",
+      "side": 1,
+      "message": "please move this under version 3.0.3 as we have move beyond 3.0.1",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 25,
+        "endChar": 95
+      },
+      "revId": "4ecc0051a7ed7d9841e657266bf903b3e6ce825d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24061cc3_afb4caef",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-08-26T15:46:16Z",
+      "side": 1,
+      "message": "please make this 3.0.3",
+      "range": {
+        "startLine": 26,
+        "startChar": 10,
+        "endLine": 26,
+        "endChar": 15
+      },
+      "revId": "4ecc0051a7ed7d9841e657266bf903b3e6ce825d",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
