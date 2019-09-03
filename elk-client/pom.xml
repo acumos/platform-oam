@@ -16,7 +16,11 @@
 
 	<groupId>org.acumos.elk-client</groupId>
 	<artifactId>elk-client</artifactId>
+<<<<<<< HEAD
 	<version>3.0.2-SNAPSHOT</version>
+=======
+	<version>3.0.3-SNAPSHOT</version>
+>>>>>>> 6e3a9d4... Repository Name in the GET all archive API
 	<packaging>jar</packaging>
 
 	<name>elk-client</name>

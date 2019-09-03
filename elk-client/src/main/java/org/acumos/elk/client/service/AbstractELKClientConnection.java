@@ -44,9 +44,12 @@ public abstract class AbstractELKClientConnection {
 
 	public RestHighLevelClient restHighLevelClientConnection() {
 
-		String elk_host_ip =  getHostIP(env.getProperty("elk.host.url"));
-		int elk_elasticssearch_port = Integer.valueOf(env.getProperty("elk.elasticssearch.port"));
+//		String elk_host_ip =  getHostIP(env.getProperty("elk.host.url"));
+//		int elk_elasticssearch_port = Integer.valueOf(env.getProperty("elk.elasticssearch.port"));
 
+		String elk_host_ip =  getHostIP("13.90.204.168");
+		int elk_elasticssearch_port = Integer.valueOf(9200);
+		
 		RestHighLevelClient client = new RestHighLevelClient(
 				RestClient.builder(new HttpHost(elk_host_ip, elk_elasticssearch_port, "http")));
 		return client;

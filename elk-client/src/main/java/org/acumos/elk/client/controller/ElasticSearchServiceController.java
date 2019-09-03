@@ -178,7 +178,7 @@ public class ElasticSearchServiceController extends AbstractController {
 		return new ResponseEntity<ElasticStackIndiceResponse>(elasticStackIndiceResponse, null, HttpStatus.OK);
 	}
 
-	@ApiOperation(value = "Ger all the archive snapshot.")
+	@ApiOperation(value = "Get all the archive snapshot.")
 	@RequestMapping(value = ElkClientConstants.GET_ALL_ARCHIVE_INFO, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<ElkArchiveResponse> getAllArchiveInfoElkSnapshot()throws Exception {
 		LogConfig.setEnteringMDCs("elk-client",ElkClientConstants.GET_ALL_ARCHIVE_INFO);

@@ -19,20 +19,24 @@
  */
 package org.acumos.elk.client.transport;
 
+import java.util.List;
+
 import io.swagger.annotations.ApiModelProperty;
 
 public class ArchiveInfo {
 
 	@ApiModelProperty(required = true, value = "snapshot creation date")
-	String date;
+	private String date;
 
 	@ApiModelProperty(required = true, value = "snapshot name.")
-	String backUpName;
+	private String repositoryName;
 
-	public ArchiveInfo(String date, String backUpName) {
+	private List<ElkGetSnapshotMetaData> snapshots;
+
+	public ArchiveInfo(String date, String repositoryName) {
 		super();
 		this.date = date;
-		this.backUpName = backUpName;
+		this.repositoryName = repositoryName;
 	}
 
 	public ArchiveInfo() {
@@ -43,20 +47,28 @@ public class ArchiveInfo {
 		return date;
 	}
 
-	public String getBackUpName() {
-		return backUpName;
+	public String getRepositoryName() {
+		return repositoryName;
+	}
+
+	public List<ElkGetSnapshotMetaData> getSnapshots() {
+		return snapshots;
+	}
+
+	public void setSnapshots(List<ElkGetSnapshotMetaData> snapshots) {
+		this.snapshots = snapshots;
 	}
 
 	@Override
 	public String toString() {
-		return "ArchiveInfo [date=" + date + ", backUpName=" + backUpName + "]";
+		return "ArchiveInfo [date=" + date + ", repositoryName=" + repositoryName + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((backUpName == null) ? 0 : backUpName.hashCode());
+		result = prime * result + ((repositoryName == null) ? 0 : repositoryName.hashCode());
 		return result;
 	}
 
@@ -69,10 +81,10 @@ public class ArchiveInfo {
 		if (getClass() != obj.getClass())
 			return false;
 		ArchiveInfo other = (ArchiveInfo) obj;
-		if (backUpName == null) {
-			if (other.backUpName != null)
+		if (repositoryName == null) {
+			if (other.repositoryName != null)
 				return false;
-		} else if (!backUpName.equals(other.backUpName))
+		} else if (!repositoryName.equals(other.repositoryName))
 			return false;
 		return true;
 	}
