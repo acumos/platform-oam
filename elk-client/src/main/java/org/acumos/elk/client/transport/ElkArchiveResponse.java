@@ -29,24 +29,29 @@ public class ElkArchiveResponse {
 	private List<ArchiveInfo> archiveInfo;
 	private String msg;
 	private String status;
-	
+
 	public List<ArchiveInfo> getArchiveInfo() {
 		return archiveInfo;
 	}
+
 	public void setArchiveInfo(List<ArchiveInfo> archiveInfo) {
 		this.archiveInfo = archiveInfo;
 	}
+
 	public String getMsg() {
 		return msg;
 	}
+
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+
 	public String getStatus() {
 		return status;
 	}
+
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
+
 }

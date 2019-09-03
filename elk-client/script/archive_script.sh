@@ -56,19 +56,19 @@ function archive_esdata() {
     then
         if [ -e "../../elasticsearch/data/backup/$repo" ]
         then 
-		    if [ -e "../../elasticsearch/data/archive-es-data/$repo" ]
-			then
-			   log DEBUG "Archiving is already done for $repo, deleting the $repo from $directory_name and recreating"
-			   rm -rf ../../elasticsearch/data/archive-es-data/$repo
-			fi
+            if [ -e "$directory_name/$repo" ]
+            then
+               log DEBUG "Archiving is already done for $repo, deleting the $repo from $directory_name and recreating"
+               rm -rf $directory_name/$repo
+            fi
             log DEBUG "Archiving Eleasticserach data to $directory_name"
             log DEBUG "Archiving started: $repo"
-            mv -f ../../elasticsearch/data/backup/$repo/ ../../elasticsearch/data/archive-es-data/
+            mv -f ../../elasticsearch/data/backup/$repo/ $directory_name/
             log DEBUG "Archive Done:$repo"
-			echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
+            echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
         else            
             log ERROR "$repo:Repository not present"
-			echo "$repo:Repository not present | Back up is done"
+            echo "$repo:Repository not present | Back up is done"
         fi    
     else
         log ERROR "$PWD/$directory_name: Directory not present"
@@ -76,12 +76,12 @@ function archive_esdata() {
         log INFO "Created archive location directory: $directory_name"
         if [ -e "../../elasticsearch/data/backup/$repo" ]
         then 
-            mv ../../elasticsearch/data/backup/$repo/ ../../elasticsearch/data/archive-es-data/
+            mv ../../elasticsearch/data/backup/$repo/ $directory_name/
             log DEBUG "Archive Done:$repo"
-			echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
+            echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
         else            
             log ERROR "$repo:Repository not present"
-			echo "$repo:Repository not present | Back up is done"
+            echo "$repo:Repository not present | Back up is done"
         fi    
     fi
 }
@@ -96,7 +96,7 @@ log INFO "Inside restore_esdata:"
             cp -r --preserve=all $directory_name/$repo/ ../../elasticsearch/data/backup/$repo/
             chown '1000:1000' ../../elasticsearch/data/backup/$repo
             log INFO "Restore done:$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
-			echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
+            echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
         else
             log ERROR "$repo:Repository not found | No data available to restore"
             echo "No data present to restore"
@@ -111,21 +111,42 @@ function archive_info() {
 log INFO "Inside archive_info:" 
  if [ -e "$directory_name" ]
     then
-        fileExist=$(ls -l ../../elasticsearch/data/archive-es-data | head -1 | awk '{print $2}')
+        fileExist=$(ls -l $directory_name | head -1 | awk '{print $2}')
         if [ $fileExist -gt 0 ]
         then
             #Below command is used to get list of archival with archive date in csv format 
-            ls -l ../../elasticsearch/data/archive-es-data --time-style="+%Y-%m-%d:%H:%M:%SZ" | awk '{print $6, $7}' | sed 's/[ \t]/,/g' | sed 's/[ /]/,/g' | awk '{if(NR>1)print}'
+            ls -l $directory_name --time-style="+%Y-%m-%d:%H:%M:%SZ" | awk '{print $6, $7}' | sed 's/[ \t]/,/g' | sed 's/[ /]/,/g' | awk '{if(NR>1)print}'
         else
-            echo "No data present in archive location"
-            log ERROR "$directory_name: No data present in archive location"			
+            log ERROR "$directory_name: No data present in archive location"
+			echo "No data present in archive location"
         fi    
     else
+	   log ERROR "$directory_name: No data present in archive location"
        echo "No data present in archive location"
-       log ERROR "$directory_name: No data present in archive location"	   
     fi
 }
-directory_name=../../elasticsearch/data/archive-es-data
+
+function archive_delete() {
+log INFO "Inside archive_delete:" 
+ if [ -e "$directory_name" ]
+    then
+        fileExist=$(ls -l $directory_name | head -1 | awk '{print $2}')
+        if [ $fileExist -gt 0 ]
+        then
+            rm -rf $directory_name/$repo
+            log DEBUG "Deleted:$repo"
+            echo "$(date +%Y-%m-%d:%H:%M:%SZ),$repo"
+        else
+            log ERROR "$directory_name: No data present in archive location"
+			echo "No data present in archive location"
+        fi    
+    else
+       log ERROR "$directory_name: No data present in archive location"
+	   echo "No data present in archive location"
+    fi
+}
+
+directory_name=../../elasticsearch/data/backup/archive-es-data
 WORK_DIR=$(pwd)
 action=${1,,}
 repo=$2
@@ -139,6 +160,9 @@ then
 elif [ $action == 'info' ]
 then
   archive_info  
+elif [ $action == 'delete' ]
+then
+  archive_delete 
 else
-    log INFO "wrong action passed"  
+    log INFO "wrong action passed"
 fi
