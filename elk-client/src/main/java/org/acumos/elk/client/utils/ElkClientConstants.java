@@ -43,5 +43,6 @@ public final class ElkClientConstants {
 	public static final String SUCCESS = "success";
 	public static final String FAIL = "fail";
 	public static final String INFO = "INFO";
+	public static final String ARCHIVE_ES_DATA = "archive-es-data";
 	
 }

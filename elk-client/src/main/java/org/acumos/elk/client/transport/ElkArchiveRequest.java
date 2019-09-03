@@ -25,7 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 public class ElkArchiveRequest {
 
-	@ApiModelProperty(required = true, value = "String value archive/restore", example = "archive/restore")
+	@ApiModelProperty(required = true, value = "String value archive/restore/delete", example = "archive/restore/delete")
 	private String action;
 
 	@ApiModelProperty(required = true)

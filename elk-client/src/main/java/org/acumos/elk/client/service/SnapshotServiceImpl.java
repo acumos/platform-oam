@@ -338,12 +338,12 @@ public class SnapshotServiceImpl extends AbstractELKClientConnection implements 
 		return elasticStackIndiceResponse;
 	}
 
-	private ElasticsearchSnapshotsResponse getElasticsearchSnapshotDetails(
+	protected ElasticsearchSnapshotsResponse getElasticsearchSnapshotDetails(
 			ElkRepositoriesRequest elkRepositoriesRequest, String repositoryName) {
 
 		RestHighLevelClient client = restHighLevelClientConnection();
 		GetSnapshotsRequest getSnapshotsRequest = new GetSnapshotsRequest();
-		if (elkRepositoriesRequest.getRepositoryName() != null
+		if (elkRepositoriesRequest != null && elkRepositoriesRequest.getRepositoryName() != null
 				&& !elkRepositoriesRequest.getRepositoryName().isEmpty()) {
 			getSnapshotsRequest.repository(elkRepositoriesRequest.getRepositoryName());
 		} else {

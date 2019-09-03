@@ -20,6 +20,11 @@
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
 
+Version 3.0.3, 03 September 2019
+--------------------------------
+* Repository Name in the GET all archive API (`ACUMOS-3378 <https://jira.acumos.org/browse/ACUMOS-3378>`_)
+* Delete snapshot API (`ACUMOS-3379 <https://jira.acumos.org/browse/ACUMOS-3379>`_
+
 Version 3.0.2, 21 August 2019
 -------------------------------
 * Create Snapshot API (`ACUMOS-3347 <https://jira.acumos.org/browse/ACUMOS-3347>`_)

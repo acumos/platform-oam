@@ -21,17 +21,17 @@ package org.acumos.elk.client.transport;
 
 import java.util.List;
 
-import io.swagger.annotations.ApiModelProperty;
 
 public class CreateSnapshot {
 
-	@ApiModelProperty(required = true, value = "ElasticStack repository name", example = "logstashBackup")
 	private String repositoryName;
 	
+<<<<<<< HEAD
 	@ApiModelProperty(required = true, value = "ElasticStack snapshot name, \"default\" for default snapshot name.", example = "default")
+=======
+>>>>>>> 6e3a9d4... Repository Name in the GET all archive API
 	private String snapshotName;
 
-	@ApiModelProperty(value = "indices names")
 	private List<String> indices;
 
 	public String getRepositoryName() {
