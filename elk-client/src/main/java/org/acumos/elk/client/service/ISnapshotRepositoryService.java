@@ -23,6 +23,7 @@ import org.acumos.elk.client.transport.ElkArchiveRequest;
 import org.acumos.elk.client.transport.ElkArchiveResponse;
 import org.acumos.elk.client.transport.ElkGetRepositoriesResponse;
 import org.acumos.elk.client.transport.ElkRepositoriesRequest;
+import org.acumos.elk.client.transport.ElkSnapshotsResponse;
 
 /** 
  * This interface defines method for elastic stack repository operation. 
