@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff009775_4203ed46",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-09-05T19:11:14Z",
+      "side": 1,
+      "message": "please change this to 3.0.4 and revise the date with today\u0027s date",
+      "range": {
+        "startLine": 23,
+        "startChar": 7,
+        "endLine": 23,
+        "endChar": 14
+      },
+      "revId": "b85985759bf141057e3d6342bc07bc450209e188",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "30b1820a_da34b24c",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-09-05T19:11:14Z",
+      "side": 1,
+      "message": "update version to 3.0.4",
+      "range": {
+        "startLine": 26,
+        "startChar": 9,
+        "endLine": 26,
+        "endChar": 16
+      },
+      "revId": "b85985759bf141057e3d6342bc07bc450209e188",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ae74f3e_22ca436e",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 191
+      },
+      "writtenOn": "2019-09-05T19:11:14Z",
+      "side": 1,
+      "message": "add MDC for User as per acumos log standards",
+      "revId": "b85985759bf141057e3d6342bc07bc450209e188",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
