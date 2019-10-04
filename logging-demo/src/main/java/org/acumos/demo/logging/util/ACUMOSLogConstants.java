@@ -146,19 +146,19 @@ public  class ACUMOSLogConstants {
 		
 		public enum ResponseStatus {
 			
-			COMPLETED,
-			ERROR,
-			INPROGRESS
+			MDC_COMPLETED,
+			MDC_ERROR,
+			MDC_INPROGRESS
 		}
 		
 		public enum ResponseSeverity {
 
-			INFO,
-			ERROR,
-			TRACE,
-			DEBUG,
-			WARN,
-			FATAL
+			MDC_INFO,
+			MDC_ERROR,
+			MDC_TRACE,
+			MDC_DEBUG,
+			MDC_WARN,
+			MDC_FATAL
 		}
 
 
@@ -367,7 +367,7 @@ public  class ACUMOSLogConstants {
 			this.mString = mString;
 		}
 
-		public Marker getMarker() {
+		public Marker getmMarker() {
 			return this.mMarker;
 		}
 
