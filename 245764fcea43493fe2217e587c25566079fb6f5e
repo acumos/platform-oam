@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fd635c59_ebfe0c11",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 220
+      },
+      "writtenOn": "2019-10-23T14:34:20Z",
+      "side": 0,
+      "message": "these properties should be configured in config.properties file rather hardcoding it",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 55
+      },
+      "revId": "245764fcea43493fe2217e587c25566079fb6f5e",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
