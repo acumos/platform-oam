@@ -22,25 +22,26 @@ package org.acumos.demo.logging.service;
 import org.acumos.demo.logging.util.ACUMOSLogConstants.InvocationMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Service;
 
-@Service
+
+//@Service
 public class ApplicationService {
 	private static final Logger log = LoggerFactory.getLogger(ApplicationService.class);
 	
 
     public void logNormalThread() {
     
-    	log.info(InvocationMode.SYNCHRONOUS.getMarker(),"platform-oam");
+    	log.info(InvocationMode.SYNCHRONOUS.getmMarker(),"platform-oam");
     
     }
 
-    @Async
+   // @Async
     public void logAsyncThread() {
     
-    	log.info(InvocationMode.ASYNCHRONOUS.getMarker(),"platform-oam");
+    	log.info(InvocationMode.ASYNCHRONOUS.getmMarker(),"platform-oam");
         
     }
 
 }
+
+

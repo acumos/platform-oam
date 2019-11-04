@@ -16,7 +16,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   ===============LICENSE_END=========================================================
-  */
+  
 package org.acumos.demo.logging;
 
 import java.util.Map;
@@ -24,11 +24,11 @@ import java.util.Map;
 import org.slf4j.MDC;
 import org.springframework.core.task.TaskDecorator;
 
-/**
+*//**
  * Copy MDC data from a Web thread context onto the asynchronous threads’
  * context.
  *
- */
+ *//*
 public class LoggingTaskDecorator implements TaskDecorator {
 
 	@Override
@@ -49,3 +49,4 @@ public class LoggingTaskDecorator implements TaskDecorator {
 	}
 
 }
+*/
