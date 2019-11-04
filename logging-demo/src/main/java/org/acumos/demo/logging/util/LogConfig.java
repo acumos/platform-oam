@@ -23,10 +23,11 @@ import java.net.InetAddress;
 import java.util.UUID;
 
 import org.acumos.demo.logging.util.ACUMOSLogConstants.MDCs;
+import org.acumos.demo.logging.util.ACUMOSLogConstants.ResponseStatus;
 import org.slf4j.MDC;
 
 public class LogConfig {
-	public static void setEnteringMDCs(String targetEntry,String targetService,String user) throws Exception{
+	public static void setEnteringMDCs(String targetEntry,String targetService,String user,String responseCode,String responseSeverity) throws Exception{
 		String hostname="";
         String ip="";
 		ACUMOSLogConstants.setDefaultMDCs();
@@ -43,6 +44,53 @@ public class LogConfig {
 		MDC.put(MDCs.CLIENT_IP_ADDRESS, ip);
 		MDC.put(MDCs.SERVER_FQDN, hostname);
 		MDC.put(MDCs.USER, user);
+		
+		if(responseCode.equalsIgnoreCase("MDC_COMPLETED"))
+		{
+			MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_COMPLETED.toString());
+		}
+		else if(responseCode.equalsIgnoreCase("MDC_ERROR"))
+		{
+			MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_ERROR.toString());
+		}
+		else if(responseCode.equalsIgnoreCase("MDC_INPROGRESS"))
+		{
+			MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_INPROGRESS.toString());
+		}
+		
+
+		if(responseSeverity.equalsIgnoreCase("MDC_INFO"))
+		{
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_INFO.toString());
+		}
+		else if(responseSeverity.equalsIgnoreCase("MDC_ERROR"))
+		{
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_ERROR.toString());
+		}
+		else if(responseSeverity.equalsIgnoreCase("MDC_TRACE"))
+		{
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_TRACE.toString());
+		}
+		else if(responseSeverity.equalsIgnoreCase("MDC_DEBUG"))
+		{
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_DEBUG.toString());
+		}
+		else if(responseSeverity.equalsIgnoreCase("MDC_WARN"))
+		{
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_WARN.toString());
+		}
+		else if(responseSeverity.equalsIgnoreCase("MDC_FATAL"))
+		{
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_TRACE.toString());
+		}
+		
+	//	MDC.put(MDCs.RESPONSE_SEVERITY, user);
+	//	MDC.put(MDCs.RESPONSE_DESCRIPTION, ResponseStatus.COMPLETED.toString());
+		//RESPONSE_DESCRIPTION
+		
+	//	MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_COMPLETED.toString());
+	//	MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_INFO.toString());
+		
 
 		
 	}

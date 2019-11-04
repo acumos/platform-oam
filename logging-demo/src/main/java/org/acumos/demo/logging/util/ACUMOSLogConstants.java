@@ -144,21 +144,108 @@ public  class ACUMOSLogConstants {
 	 */
 	public static  class MDCs {
 		
-		public enum ResponseStatus {
+		public enum ResponseStatusMDC {
 			
-			COMPLETED,
-			ERROR,
-			INPROGRESS
+			MDC_COMPLETED,
+			MDC_ERROR,
+			MDC_INPROGRESS;
+			
+			/** Enum value. */
+			/*private String mString;
+
+			*//** Corresponding marker. *//*
+			private Marker mMarker;
+			
+			public String getmString() {
+				return mString;
+			}
+
+			public void setmString(String mString) {
+				this.mString = mString;
+			}
+
+			public Marker getmMarker() {
+				return this.mMarker;
+			}
+
+			public void setmMarker(Marker mMarker) {
+				this.mMarker = mMarker;
+			}
+			
+			ResponseStatusMDC( String s,  Marker m) {
+				this.mString = s;
+				this.mMarker = m;
+			}
+
+			*//**
+			 * Get Marker for enum.
+			 *
+			 * @return Marker.
+			 *//*
+			
+			@Override
+			public String toString() {
+				return this.mString;
+			}
+			*/
+			
 		}
 		
-		public enum ResponseSeverity {
+		public enum ResponseSeverityMDC {
+			
+			/** Synchronous, blocking. */
+	//		MDC_INFO("MDC_INFO", Markers.INVOKE_SYNCHRONOUS),
 
-			INFO,
-			ERROR,
-			TRACE,
-			DEBUG,
-			WARN,
-			FATAL
+			/** Asynchronous, non-blocking. */
+		//	MDC_ERROR("ASYNCHRONOUS", Markers.INVOKE_ASYNCHRONOUS);
+
+			/** Enum value. */
+
+			MDC_INFO,
+			MDC_ERROR,
+			MDC_TRACE,
+			MDC_DEBUG,
+			MDC_WARN,
+			MDC_FATAL;
+
+			/** Enum value. */
+		/*private String mString;
+
+		*//** Corresponding marker. *//*
+		private Marker mMarker;
+		
+		public String getmString() {
+			return mString;
+		}
+
+		public void setmString(String mString) {
+			this.mString = mString;
+		}
+
+		public Marker getmMarker() {
+			return this.mMarker;
+		}
+
+		public void setmMarker(Marker mMarker) {
+			this.mMarker = mMarker;
+		}
+		
+		ResponseSeverityMDC( String s,  Marker m) {
+			this.mString = s;
+			this.mMarker = m;
+		}
+
+		*//**
+		 * Get Marker for enum.
+		 *
+		 * @return Marker.
+		 *//*
+		
+		@Override
+		public String toString() {
+			return this.mString;
+		}*/
+		
 		}
 
 
@@ -367,7 +454,7 @@ public  class ACUMOSLogConstants {
 			this.mString = mString;
 		}
 
-		public Marker getMarker() {
+		public Marker getmMarker() {
 			return this.mMarker;
 		}
 
