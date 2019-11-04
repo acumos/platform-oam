@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "49af1295_9259af63",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "Correct the format, as it is considered in all places. Take help of other component to compare.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 123
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "337edc78_ee386382",
+        "filename": "logging-demo/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "dont update the pom version for now. Whenever we will be releasing the build that time we will update.",
+      "range": {
+        "startLine": 19,
+        "startChar": 9,
+        "endLine": 19,
+        "endChar": 24
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d5060893_ec2d82c9",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Application.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "if you are commenting whole file, better to check and remove it if not needed.",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 2
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8f5d4d1f_a64ce94e",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "if you are commenting whole file, better to check and remove it if not needed.",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 2
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "670c3e3a_e7fc781e",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/LoggingTaskDecorator.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "if you are commenting whole file, better to check and remove it if not needed.",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 2
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c6f41cc6_a15b52c5",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "take these from properties file, rather than using as constant",
+      "range": {
+        "startLine": 60,
+        "startChar": 51,
+        "endLine": 60,
+        "endChar": 59
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5078093f_dd33c569",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "wherever you are using constants, take it from properites file",
+      "range": {
+        "startLine": 66,
+        "startChar": 53,
+        "endLine": 66,
+        "endChar": 61
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "80ce789d_6ceb279b",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/LogConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "same applied here also for constants",
+      "range": {
+        "startLine": 53,
+        "startChar": 43,
+        "endLine": 53,
+        "endChar": 59
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8846d020_5f3e688b",
+        "filename": "logging-demo/src/test/java/com/example/demo/DemoApplicationTests.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-04T22:54:31Z",
+      "side": 1,
+      "message": "do as previous review.",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 2
+      },
+      "revId": "fbd7869bd1e95b4faef573324d5812ebf25b3794",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
