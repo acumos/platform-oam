@@ -58,6 +58,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import com.acumos.elk.exception.ELKException;
+
 /**
  * Implementation of operation related to elastic stack repository.
  *
@@ -103,9 +105,16 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 		for (ELkRepositoryMetaData eLkRepositoryMetaData : elkRepositoryMetaDataList) {
 			repositoryNameSet.add(eLkRepositoryMetaData.getName());
 		}
-		if (repositoryNameSet.contains(elkCreateRepositoriesRequest.getRepositoryName())) {
-			return "false | RepositoryName already exist";
+
+		try {
+			if (repositoryNameSet.contains(elkCreateRepositoriesRequest.getRepositoryName())) {
+				throw new ELKException("false | RepositoryName already exist");
+
+			}
+		} catch (ELKException e) {
+			logger.info(e.getMessage());
 		}
+
 		boolean acknowledged = createRepo(elkCreateRepositoriesRequest, "backup");
 		createRepo(elkCreateRepositoriesRequest, ElkClientConstants.ARCHIVE_ES_DATA);
 
@@ -243,10 +252,10 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 					result = ElkServiceUtils.executeScript(action, repoName);
 					resultList.add(result.trim());
 					if (action.equalsIgnoreCase("delete")) {
-					ElkRepositoriesRequest elkDeleteRepositoriesRequest= new ElkRepositoriesRequest();
-					elkDeleteRepositoriesRequest.setNodeTimeout(ElkClientConstants.TIME_ONE_MINT_OUT);
-					elkDeleteRepositoriesRequest.setRepositoryName(repoName);
-					deleteElkRepository(elkDeleteRepositoriesRequest);
+						ElkRepositoriesRequest elkDeleteRepositoriesRequest = new ElkRepositoriesRequest();
+						elkDeleteRepositoriesRequest.setNodeTimeout(ElkClientConstants.TIME_ONE_MINT_OUT);
+						elkDeleteRepositoriesRequest.setRepositoryName(repoName);
+						deleteElkRepository(elkDeleteRepositoriesRequest);
 					}
 				}
 			} catch (Exception ex) {
