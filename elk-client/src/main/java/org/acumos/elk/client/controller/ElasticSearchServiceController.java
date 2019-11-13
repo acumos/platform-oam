@@ -53,6 +53,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 
+import com.acumos.elk.exception.ELKException;
+
 import io.swagger.annotations.ApiOperation;
 
 /**
@@ -80,7 +82,7 @@ public class ElasticSearchServiceController extends AbstractController {
 		LogConfig.clearMDCDetails();
 		return new ResponseEntity<ElasticStackIndices>(response, null, HttpStatus.OK);
 	}
-	
+
 	@ApiOperation(value = "Delete elasticstack Indices.")
 	@RequestMapping(value = ElkClientConstants.DELETE_INDICES, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<ElasticStackIndiceResponse> deleteElkSnapshot(
@@ -108,10 +110,17 @@ public class ElasticSearchServiceController extends AbstractController {
 	@ApiOperation(value = "Create Elasticstack repository.")
 	@RequestMapping(value = ElkClientConstants.SNAPSHOT_CREATE_REPOSITORY, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> createElkRepository(@RequestBody ElkRepositoriesRequest elkCreateRepositoriesRequest)
-			throws Exception {
+			throws Exception, ELKException {
 		LogConfig.setEnteringMDCs("elk-client", ElkClientConstants.SNAPSHOT_CREATE_REPOSITORY);
+		String repositoryStatus = null;
 		logger.debug("Inside create elasticstack repository");
-		String repositoryStatus = snapshotGetRepositoryService.createElkRepository(elkCreateRepositoriesRequest);
+		try {
+			repositoryStatus = snapshotGetRepositoryService.createElkRepository(elkCreateRepositoriesRequest);
+		} catch (Exception ex) {
+			logger.info(ex.getMessage());
+			throw new ELKException("false | RepositoryName already exist");
+
+		}
 		logger.debug("method call ended.");
 		LogConfig.clearMDCDetails();
 		return new ResponseEntity<String>(repositoryStatus, null, HttpStatus.OK);
@@ -180,18 +189,19 @@ public class ElasticSearchServiceController extends AbstractController {
 
 	@ApiOperation(value = "Get all the archive snapshot.")
 	@RequestMapping(value = ElkClientConstants.GET_ALL_ARCHIVE_INFO, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<ElkArchiveResponse> getAllArchiveInfoElkSnapshot()throws Exception {
-		LogConfig.setEnteringMDCs("elk-client",ElkClientConstants.GET_ALL_ARCHIVE_INFO);
+	public ResponseEntity<ElkArchiveResponse> getAllArchiveInfoElkSnapshot() throws Exception {
+		LogConfig.setEnteringMDCs("elk-client", ElkClientConstants.GET_ALL_ARCHIVE_INFO);
 		logger.debug("Inside getAllArchiveInfoElkSnapshot");
 		ElkArchiveResponse archiveResponse = snapshotGetRepositoryService.getArchiveElkRepository();
 		logger.debug("method call ended.");
 		LogConfig.clearMDCDetails();
 		return new ResponseEntity<ElkArchiveResponse>(archiveResponse, null, HttpStatus.OK);
 	}
-	
+
 	@ApiOperation(value = "Archive and Restore elasticstack snapshot.")
 	@RequestMapping(value = ElkClientConstants.ARCHIVE_REQUEST, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<ElkArchiveResponse> archiveElkSnapshot(@RequestBody ElkArchiveRequest archiveRequest)throws Exception {
+	public ResponseEntity<ElkArchiveResponse> archiveElkSnapshot(@RequestBody ElkArchiveRequest archiveRequest)
+			throws Exception {
 		LogConfig.setEnteringMDCs("elk-client", ElkClientConstants.ARCHIVE_REQUEST);
 		logger.debug("Inside archiveElkSnapshot");
 		ElkArchiveResponse archiveResponse = snapshotGetRepositoryService.archiveElkRepository(archiveRequest);
@@ -199,7 +209,7 @@ public class ElasticSearchServiceController extends AbstractController {
 		LogConfig.clearMDCDetails();
 		return new ResponseEntity<ElkArchiveResponse>(archiveResponse, null, HttpStatus.OK);
 	}
-	
+
 	@ResponseStatus(HttpStatus.NOT_FOUND)
 	@ExceptionHandler(ErrorTransport.class)
 	public ResponseEntity<ErrorDetails> handleTransportError(ErrorTransport ex, WebRequest request) {
