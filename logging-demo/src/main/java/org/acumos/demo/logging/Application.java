@@ -16,7 +16,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   ===============LICENSE_END=========================================================
-  */
+  
 package org.acumos.demo.logging;
 
 import java.util.concurrent.Executor;
@@ -43,3 +43,4 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 }
+*/
