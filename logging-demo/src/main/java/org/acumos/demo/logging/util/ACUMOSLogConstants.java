@@ -21,19 +21,24 @@ package org.acumos.demo.logging.util;
 
 import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
-import org.slf4j.MDC;
 
+import java.util.Properties;
+
+import org.slf4j.MDC;
 
 /**
  * Constants for standard ACUMOS headers, MDCs, etc.
  *
  */
-public  class ACUMOSLogConstants {
+public class ACUMOSLogConstants {
 
 	/**
 	 * Hide and forbid construction.
 	 */
+	
+
 	private ACUMOSLogConstants() {
+
 		throw new UnsupportedOperationException();
 	}
 
@@ -46,28 +51,26 @@ public  class ACUMOSLogConstants {
 	/**
 	 * Marker constants.
 	 */
-	public static  class Markers {
+	public static class Markers {
 
 		/** Marker reporting invocation. */
-		public static  Marker INVOKE = MarkerFactory.getMarker("INVOKE");
-
-		
+		public static Marker INVOKE = MarkerFactory.getMarker(LoggingConstant.INVOKE);
 
 		/** Marker reporting invocation. */
-		public static  Marker INVOKE_RETURN = MarkerFactory.getMarker("INVOKE_RETURN");
+		public static Marker INVOKE_RETURN = MarkerFactory.getMarker(LoggingConstant.INVOKE_RETURN);
 
 		/** Marker reporting synchronous invocation. */
-		public static  Marker INVOKE_SYNCHRONOUS = build("INVOKE", "SYNCHRONOUS");
+		public static Marker INVOKE_SYNCHRONOUS = build("INVOKE", "SYNCHRONOUS");
 
 		/** Marker reporting asynchronous invocation. */
-		public static  Marker INVOKE_ASYNCHRONOUS = build("INVOKE", "ASYNCHRONOUS");
+		public static Marker INVOKE_ASYNCHRONOUS = build("INVOKE", "ASYNCHRONOUS");
 
 		/** Marker reporting entry into a component. */
-		public static  Marker ENTRY = MarkerFactory.getMarker("ENTRY");
+		public static Marker ENTRY = MarkerFactory.getMarker(LoggingConstant.ENTRY);
 
 		/** Marker reporting exit from a component. */
-		public static  Marker EXIT = MarkerFactory.getMarker("EXIT");
-		
+		public static Marker EXIT = MarkerFactory.getMarker(LoggingConstant.EXIT);
+
 		public static Marker getINVOKE() {
 			return INVOKE;
 		}
@@ -125,8 +128,8 @@ public  class ACUMOSLogConstants {
 		 *            sub-token.
 		 * @return detached Marker.
 		 */
-		private static Marker build( String m1,  String m2) {
-			 Marker marker = MarkerFactory.getDetachedMarker(m1);
+		private static Marker build(String m1, String m2) {
+			Marker marker = MarkerFactory.getDetachedMarker(m1);
 			marker.add(MarkerFactory.getDetachedMarker(m2));
 			return marker;
 		}
@@ -142,62 +145,65 @@ public  class ACUMOSLogConstants {
 	/**
 	 * MDC name constants.
 	 */
-	public static  class MDCs {
-		
-		public enum ResponseStatus {
-			
-			COMPLETED,
-			ERROR,
-			INPROGRESS
-		}
-		
-		public enum ResponseSeverity {
+	public static class MDCs {
 
-			INFO,
-			ERROR,
-			TRACE,
-			DEBUG,
-			WARN,
-			FATAL
+		public enum ResponseStatusMDC {
+
+			MDC_COMPLETED, MDC_ERROR, MDC_INPROGRESS;
+
+			/** Enum value. */
+
 		}
 
+		public enum ResponseSeverityMDC {
+
+			/** Synchronous, blocking. */
+			// MDC_INFO("MDC_INFO", Markers.INVOKE_SYNCHRONOUS),
+
+			/** Asynchronous, non-blocking. */
+			// MDC_ERROR("ASYNCHRONOUS", Markers.INVOKE_ASYNCHRONOUS);
+
+			/** Enum value. */
+
+			MDC_INFO, MDC_ERROR, MDC_TRACE, MDC_DEBUG, MDC_WARN, MDC_FATAL;
+
+			/** Enum value. */
+
+		}
 
 		// Tracing. ////////////////////////////////////////////////////////////
 
 		/** MDC correlating messages for a logical transaction. */
-		public static  String REQUEST_ID = "RequestID";
-
-		
+		public static String REQUEST_ID = LoggingConstant.REQUEST_ID;
 
 		/** MDC recording target service. */
-		public static  String TARGET_SERVICE_NAME = "TargetServiceName";
+		public static String TARGET_SERVICE_NAME = LoggingConstant.TARGET_SERVICE_NAME;
 
 		/** MDC recording target entity. */
-		public static  String TARGET_ENTITY = "TargetEntity";
+		public static String TARGET_ENTITY = LoggingConstant.TARGET_ENTITY;
 
 		// Network. ////////////////////////////////////////////////////////////
 
 		/** MDC recording caller address. */
-		public static  String CLIENT_IP_ADDRESS = "ClientIPAddress";
+		public static String CLIENT_IP_ADDRESS = LoggingConstant.CLIENT_IP_ADDRESS;
 
 		/** MDC recording server address. */
-		public static  String SERVER_FQDN = "ServerFQDN";
+		public static String SERVER_FQDN = LoggingConstant.SERVER_FQDN;
 
 		/** MDC reporting outcome code. */
-		public static  String RESPONSE_CODE = "ResponseCode";
+		public static String RESPONSE_CODE = LoggingConstant.RESPONSE_CODE;
 
 		/** MDC reporting outcome description. */
-		public static  String RESPONSE_DESCRIPTION = "ResponseDescription";
+		public static String RESPONSE_DESCRIPTION = LoggingConstant.RESPONSE_DESCRIPTION;
 
 		/** MDC reporting outcome error level. */
-		public static  String RESPONSE_SEVERITY = "Severity";
+		public static String RESPONSE_SEVERITY = LoggingConstant.RESPONSE_SEVERITY;
 
 		/** MDC reporting outcome status of the request. */
-		public static  String STATUS_CODE = "StatusCode";
-		
-		public static  String USER = "User";
-		
-		
+		public static String STATUS_CODE = LoggingConstant.STATUS_CODE;
+
+		public static String USER = LoggingConstant.USER;
+
 		public static String getUSER() {
 			return USER;
 		}
@@ -277,8 +283,7 @@ public  class ACUMOSLogConstants {
 		public static void setSTATUS_CODE(String sTATUS_CODE) {
 			STATUS_CODE = sTATUS_CODE;
 		}
-		
-		
+
 		// Unsorted. ///////////////////////////////////////////////////////////
 
 		/**
@@ -292,10 +297,10 @@ public  class ACUMOSLogConstants {
 	/**
 	 * Header name constants.
 	 */
-	public static  class Headers {
+	public static class Headers {
 
 		/** HTTP X-ACUMOS-RequestID header. */
-		public static  String REQUEST_ID = "X-ACUMOS-RequestID";
+		public static String REQUEST_ID = "X-ACUMOS-RequestID";
 
 		/**
 		 * Hide and forbid construction.
@@ -323,10 +328,8 @@ public  class ACUMOSLogConstants {
 	 * Response success or not, for setting StatusCode.
 	 */
 	public enum ResponseStatus {
-		
-		COMPLETED,
-		ERROR,
-		INPROGRESS
+
+		COMPLETED, ERROR, INPROGRESS
 	}
 
 	/**
@@ -334,12 +337,7 @@ public  class ACUMOSLogConstants {
 	 */
 	public enum ResponseSeverity {
 
-		INFO,
-		ERROR,
-		TRACE,
-		DEBUG,
-		WARN,
-		FATAL
+		INFO, ERROR, TRACE, DEBUG, WARN, FATAL
 	}
 
 	/**
@@ -358,7 +356,7 @@ public  class ACUMOSLogConstants {
 
 		/** Corresponding marker. */
 		private Marker mMarker;
-		
+
 		public String getmString() {
 			return mString;
 		}
@@ -367,7 +365,7 @@ public  class ACUMOSLogConstants {
 			this.mString = mString;
 		}
 
-		public Marker getMarker() {
+		public Marker getmMarker() {
 			return this.mMarker;
 		}
 
@@ -383,7 +381,7 @@ public  class ACUMOSLogConstants {
 		 * @param m
 		 *            corresponding Marker.
 		 */
-		InvocationMode( String s,  Marker m) {
+		InvocationMode(String s, Marker m) {
 			this.mString = s;
 			this.mMarker = m;
 		}
@@ -393,7 +391,7 @@ public  class ACUMOSLogConstants {
 		 *
 		 * @return Marker.
 		 */
-		
+
 		@Override
 		public String toString() {
 			return this.mString;
