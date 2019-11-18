@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "70df823b_733fd037",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Application.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-18T17:03:12Z",
+      "side": 1,
+      "message": "Why we are commenting this ?",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 2
+      },
+      "revId": "7268bafe543f8f0db7f83357baa29af4de035821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "01ef130d_d10ae58a",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-18T17:03:12Z",
+      "side": 1,
+      "message": "Why we are commenting this ?",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 2
+      },
+      "revId": "7268bafe543f8f0db7f83357baa29af4de035821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ed86752_9b5b4128",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-18T17:03:12Z",
+      "side": 1,
+      "message": "How about pulling this from constant file",
+      "range": {
+        "startLine": 63,
+        "startChar": 49,
+        "endLine": 63,
+        "endChar": 74
+      },
+      "revId": "7268bafe543f8f0db7f83357baa29af4de035821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "76e8bf3a_c07b54e0",
+        "filename": "logging-demo/src/test/java/com/example/demo/DemoApplicationTests.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-18T17:03:12Z",
+      "side": 1,
+      "message": "will review in tomorrow\u0027s scrum call and show me working demo at your local",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 2
+      },
+      "revId": "7268bafe543f8f0db7f83357baa29af4de035821",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
