@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "32a6342b_88108695",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-21T17:49:24Z",
+      "side": 1,
+      "message": "remove this block if not needed.",
+      "range": {
+        "startLine": 159,
+        "startChar": 3,
+        "endLine": 163,
+        "endChar": 61
+      },
+      "revId": "98bfb97f820a6eb306c899fcd63490088ea1aed3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5fa30507_266ed47b",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/util/LogConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-21T17:49:24Z",
+      "side": 1,
+      "message": "remove this line if not neeeded",
+      "range": {
+        "startLine": 32,
+        "startChar": 1,
+        "endLine": 32,
+        "endChar": 65
+      },
+      "revId": "98bfb97f820a6eb306c899fcd63490088ea1aed3",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}

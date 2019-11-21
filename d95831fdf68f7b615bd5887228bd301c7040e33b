@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3b9ba201_edf6f693",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-21T17:49:24Z",
+      "side": 0,
+      "message": "please move this string in contants file",
+      "range": {
+        "startLine": 44,
+        "startChar": 31,
+        "endLine": 44,
+        "endChar": 42
+      },
+      "revId": "d95831fdf68f7b615bd5887228bd301c7040e33b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c07973f6_d108c02b",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/Execute.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-21T17:49:24Z",
+      "side": 0,
+      "message": "move to contants file",
+      "range": {
+        "startLine": 45,
+        "startChar": 2,
+        "endLine": 47,
+        "endChar": 55
+      },
+      "revId": "d95831fdf68f7b615bd5887228bd301c7040e33b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d2f326fa_eb2f546b",
+        "filename": "logging-demo/src/main/java/org/acumos/demo/logging/service/ApplicationService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-11-21T17:49:24Z",
+      "side": 0,
+      "message": "try to get it from constant file",
+      "range": {
+        "startLine": 35,
+        "startChar": 53,
+        "endLine": 35,
+        "endChar": 69
+      },
+      "revId": "d95831fdf68f7b615bd5887228bd301c7040e33b",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
