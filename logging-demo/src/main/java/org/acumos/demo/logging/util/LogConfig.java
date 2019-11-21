@@ -20,48 +20,77 @@ limitations under the License.
 package org.acumos.demo.logging.util;
 
 import java.net.InetAddress;
+import java.util.Properties;
 import java.util.UUID;
 
 import org.acumos.demo.logging.util.ACUMOSLogConstants.MDCs;
+import org.acumos.demo.logging.util.ACUMOSLogConstants.ResponseStatus;
 import org.slf4j.MDC;
 
 public class LogConfig {
-	public static void setEnteringMDCs(String targetEntry,String targetService,String user) throws Exception{
-		String hostname="";
-        String ip="";
+
+	// static Properties properties=ReadPropertiesFile.properties();
+
+	public static void setEnteringMDCs(String targetEntry, String targetService, String user, String responseCode,
+			String responseSeverity) throws Exception {
+		String hostname = "";
+		String ip = "";
+
 		ACUMOSLogConstants.setDefaultMDCs();
 		String requestId = UUID.randomUUID().toString();
-		String finalHostIP=getHostDetails();
-		if(finalHostIP!=null) {
-			String hostIpArr[]=finalHostIP.split("/");
-			hostname=hostIpArr[0];
-			ip=hostIpArr[1];
+		String finalHostIP = getHostDetails();
+		if (finalHostIP != null) {
+			String hostIpArr[] = finalHostIP.split("/");
+			hostname = hostIpArr[0];
+			ip = hostIpArr[1];
 		}
-		MDC.put(MDCs.REQUEST_ID, requestId);		
+		MDC.put(MDCs.REQUEST_ID, requestId);
 		MDC.put(MDCs.TARGET_ENTITY, targetEntry);
 		MDC.put(MDCs.TARGET_SERVICE_NAME, targetService);
 		MDC.put(MDCs.CLIENT_IP_ADDRESS, ip);
 		MDC.put(MDCs.SERVER_FQDN, hostname);
 		MDC.put(MDCs.USER, user);
 
-		
+		if (responseCode.equalsIgnoreCase(LoggingConstant.MDC_COMPLETED)) {
+			MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_COMPLETED.toString());
+		} else if (responseCode.equalsIgnoreCase(LoggingConstant.MDC_ERROR)) {
+			MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_ERROR.toString());
+		} else if (responseCode.equalsIgnoreCase(LoggingConstant.MDC_INPROGRESS)) {
+			MDC.put(MDCs.RESPONSE_DESCRIPTION, MDCs.ResponseStatusMDC.MDC_INPROGRESS.toString());
+		}
+
+		if (responseSeverity.equalsIgnoreCase(LoggingConstant.MDC_INFO)) {
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_INFO.toString());
+		} else if (responseSeverity.equalsIgnoreCase(LoggingConstant.MDC_ERROR)) {
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_ERROR.toString());
+		} else if (responseSeverity.equalsIgnoreCase(LoggingConstant.MDC_TRACE)) {
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_TRACE.toString());
+		} else if (responseSeverity.equalsIgnoreCase(LoggingConstant.MDC_DEBUG)) {
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_DEBUG.toString());
+		} else if (responseSeverity.equalsIgnoreCase(LoggingConstant.MDC_WARN)) {
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_WARN.toString());
+		} else if (responseSeverity.equalsIgnoreCase(LoggingConstant.MDC_FATAL)) {
+			MDC.put(MDCs.RESPONSE_SEVERITY, MDCs.ResponseSeverityMDC.MDC_TRACE.toString());
+		}
+
 	}
+
 	public static void clearMDCDetails() {
 		MDC.clear();
 	}
-	
-	public static String getHostDetails()throws Exception {
+
+	public static String getHostDetails() throws Exception {
 		InetAddress ip;
-        String hostname=null;
-        String ipStr=null;
-        String finalHostIP=null;
-        
-            ip = InetAddress.getLocalHost();
-            hostname = ip.getHostName();
-            ipStr=ip.getHostAddress();
-            if(hostname!=null && ipStr!=null) {
-            	finalHostIP=hostname+"/"+ipStr;
-            }
-        return finalHostIP;
+		String hostname = null;
+		String ipStr = null;
+		String finalHostIP = null;
+
+		ip = InetAddress.getLocalHost();
+		hostname = ip.getHostName();
+		ipStr = ip.getHostAddress();
+		if (hostname != null && ipStr != null) {
+			finalHostIP = hostname + "/" + ipStr;
+		}
+		return finalHostIP;
 	}
 }
