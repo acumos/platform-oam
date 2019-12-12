@@ -110,18 +110,12 @@ public class ElasticSearchServiceController extends AbstractController {
 	@ApiOperation(value = "Create Elasticstack repository.")
 	@RequestMapping(value = ElkClientConstants.SNAPSHOT_CREATE_REPOSITORY, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> createElkRepository(@RequestBody ElkRepositoriesRequest elkCreateRepositoriesRequest)
-			throws Exception, ELKException {
+			throws Exception {
 		LogConfig.setEnteringMDCs("elk-client", ElkClientConstants.SNAPSHOT_CREATE_REPOSITORY);
 		String repositoryStatus = null;
 		logger.debug("Inside create elasticstack repository");
 
-		try {
-			repositoryStatus = snapshotGetRepositoryService.createElkRepository(elkCreateRepositoriesRequest);
-		} catch (Exception ex) {
-			logger.info(ex.getMessage());
-			throw new ELKException("false | RepositoryName already exist");
-
-		}
+		repositoryStatus = snapshotGetRepositoryService.createElkRepository(elkCreateRepositoriesRequest);
 
 		logger.debug("method call ended.");
 		LogConfig.clearMDCDetails();

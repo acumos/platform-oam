@@ -44,8 +44,9 @@ public interface ISnapshotRepositoryService {
 	 * @param elkCreateRepositoriesRequest
 	 *            takes as request parameter
 	 * @return created status.
+	 * @throws Exception 
 	 */
-	public String createElkRepository(ElkRepositoriesRequest elkCreateRepositoriesRequest);
+	public String createElkRepository(ElkRepositoriesRequest elkCreateRepositoriesRequest) throws Exception;
 
 	/**
 	 * This method is used to delete repository.
