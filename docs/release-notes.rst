@@ -20,6 +20,13 @@
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
 
+Version 3.0.5, 13 December 2019
+--------------------------------
+* Platform OAM - Upgrade to CDS-3.0.5  (`ACUMOS-3720 <https://jira.acumos.org/browse/ACUMOS-3720>`_)
+* Platform OAM - Upgrade to CDS-3.0.5  (`ACUMOS-3632 <https://jira.acumos.org/browse/ACUMOS-3632>`_)
+* Platform OAM - Upgrade to CDS-3.0.5  (`ACUMOS-3564 <https://jira.acumos.org/browse/ACUMOS-3564>`_)
+* Platform OAM - Upgrade to CDS-3.0.5  (`ACUMOS-3070 <https://jira.acumos.org/browse/ACUMOS-3070>`_)
+
 Version 3.0.4, 24 September 2019
 --------------------------------
 * Platform OAM - Upgrade to CDS-3.0.0  (`ACUMOS-3378 <https://jira.acumos.org/browse/ACUMOS-3378>`_)
