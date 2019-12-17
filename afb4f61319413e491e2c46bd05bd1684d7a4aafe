@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0431b95e_7701ad80",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-12-17T16:50:48Z",
+      "side": 1,
+      "message": "update this date to 20th December, we will try to release on friday",
+      "range": {
+        "startLine": 23,
+        "startChar": 15,
+        "endLine": 23,
+        "endChar": 31
+      },
+      "revId": "afb4f61319413e491e2c46bd05bd1684d7a4aafe",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
