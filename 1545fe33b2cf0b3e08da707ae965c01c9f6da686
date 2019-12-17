@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6f8d796d_2f2634f1",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/service/SnapshotRepositoryServiceImpl.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-12-17T16:49:29Z",
+      "side": 1,
+      "message": "this statement can be improved, remove the words inside the brackets",
+      "range": {
+        "startLine": 115,
+        "startChar": 38,
+        "endLine": 115,
+        "endChar": 56
+      },
+      "revId": "1545fe33b2cf0b3e08da707ae965c01c9f6da686",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
