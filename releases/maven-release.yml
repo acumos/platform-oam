@@ -1,0 +1,4 @@
+distribution_type: maven
+log_dir: platform-oam-logging-demo-maven-stage-master/348
+project: platform-oam
+version: 3.0.5
