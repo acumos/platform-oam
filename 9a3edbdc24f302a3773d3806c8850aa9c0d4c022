@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "517d1c7b_e8827336",
+        "filename": "elk-client/src/main/java/org/acumos/elk/client/service/SnapshotRepositoryServiceImpl.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2019-12-24T14:24:21Z",
+      "side": 1,
+      "message": "1) check null \n2) add the string from constants, not like this",
+      "range": {
+        "startLine": 252,
+        "startChar": 9,
+        "endLine": 252,
+        "endChar": 43
+      },
+      "revId": "9a3edbdc24f302a3773d3806c8850aa9c0d4c022",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
