@@ -36,7 +36,7 @@ public final class ElkClientConstants {
 	public static final String RESTORE_SNAPSHOT_REQUEST = "/restore/snapshot";
 	public static final String GET_ALL_ARCHIVE_INFO = "/all/archive";
 	public static final String ARCHIVE_REQUEST = "/archive/action";
-
+	
 	public static final String TRUE = "true";
 	public static final String TIME_ONE_MINT_OUT = "1m";
 	public static final String TIME_TWO_MINT_OUT = "2m";
@@ -44,5 +44,7 @@ public final class ElkClientConstants {
 	public static final String FAIL = "fail";
 	public static final String INFO = "INFO";
 	public static final String ARCHIVE_ES_DATA = "archive-es-data";
+	public static final String RESTORE_REQUEST = "restore";
+	public static final String DELETE_REQUEST = "delete";
 	
 }
