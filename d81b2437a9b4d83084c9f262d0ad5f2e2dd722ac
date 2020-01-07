@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "388d9014_ff3c8734",
+        "filename": "elk-stack/elasticsearch/container-tag.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-01-07T15:33:48Z",
+      "side": 1,
+      "message": "the container tag must not have -SNAPSHOT suffix. This is the version string (tag) to be applied in the RELEASE repository.",
+      "range": {
+        "startLine": 2,
+        "startChar": 11,
+        "endLine": 2,
+        "endChar": 19
+      },
+      "revId": "d81b2437a9b4d83084c9f262d0ad5f2e2dd722ac",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
