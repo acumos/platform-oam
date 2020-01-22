@@ -228,6 +228,7 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 			if (p[0] != null && p[0].length() > 0 && p[1] != null && p[1].length() > 0) {
 				archiveInfo1 = new ArchiveInfo(p[0], p[1]);
 			}
+			logger.debug("archiveInfo1:{}", archiveInfo1);
 			return archiveInfo1;
 		};
 
@@ -238,6 +239,8 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 		if (action.equalsIgnoreCase(ElkClientConstants.INFO)) {
 			try {
 				result = ElkServiceUtils.executeScript(action, "NA");
+			//	logger.debug("result INFO:", result);
+				logger.debug("result INFO: {} ", result);
 				resultList.add(result.trim());
 			} catch (Exception ex) {
 				logger.debug("Exception:", ex);
@@ -247,7 +250,9 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 			try {
 				for (String repoName : archiveRequest.getRepositoryName()) {
 					result = ElkServiceUtils.executeScript(action, repoName);
+					logger.debug("result : {}", result);
 					resultList.add(result.trim());
+					logger.debug("resultList.size(): {}", resultList.size());
 
 					
 				}
@@ -270,7 +275,7 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 			elkArchiveResponse.setMsg("Action:" + action + " done");
 			elkArchiveResponse.setStatus(ElkClientConstants.SUCCESS);
 			elkArchiveResponse.setArchiveInfo(archiveInfoList);
-			logger.debug("archiveInfoList:" + archiveInfoList);
+			logger.debug("archiveInfoList:{}" + archiveInfoList);
 			if (action.equalsIgnoreCase("RESTORE")) {
 				for (ArchiveInfo archiveInfo : archiveInfoList) {
 					ElkRepositoriesRequest elkCreateRepositoriesRequest = new ElkRepositoriesRequest();
@@ -284,9 +289,11 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 			logger.debug("result:" + result);
 			if (result.contains("\n")) {
 				result = result.replace("\n", "");
+				logger.debug("result :{}" + result);
 			}
 			elkArchiveResponse.setStatus(ElkClientConstants.FAIL);
 			elkArchiveResponse.setMsg(result.trim());
+			logger.debug("elkArchiveResponse:{}" + elkArchiveResponse);
 		}
 		return elkArchiveResponse;
 	}
