@@ -54,6 +54,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 
 import com.acumos.elk.exception.ELKException;
+import org.acumos.elk.client.utils.ElkServiceUtils;
 
 import io.swagger.annotations.ApiOperation;
 
@@ -204,6 +205,19 @@ public class ElasticSearchServiceController extends AbstractController {
 		logger.debug("method call ended.");
 		LogConfig.clearMDCDetails();
 		return new ResponseEntity<ElkArchiveResponse>(archiveResponse, null, HttpStatus.OK);
+	}
+	
+	@ApiOperation(value = "Delete Elasticstack Archived repository.")
+	@RequestMapping(value = ElkClientConstants.SNAPSHOT_DELETE_ARCHIVED_REPOSITORY_REQUEST, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> deleteElkArchivedRepository(@RequestBody ElkRepositoriesRequest elkDeleteRepositoriesRequest)
+			throws Exception {
+		LogConfig.setEnteringMDCs("elk-client", ElkClientConstants.SNAPSHOT_DELETE_ARCHIVED_REPOSITORY_REQUEST);
+		logger.debug("Inside delete elasticstack Archived repository");
+		String result = null;
+		result = ElkServiceUtils.executeScript(ElkClientConstants.DELETE_REQUEST, elkDeleteRepositoriesRequest.getRepositoryName());
+		logger.debug("method call ended.");
+		LogConfig.clearMDCDetails();
+		return new ResponseEntity<String>(result, null, HttpStatus.OK);
 	}
 
 	@ResponseStatus(HttpStatus.NOT_FOUND)
