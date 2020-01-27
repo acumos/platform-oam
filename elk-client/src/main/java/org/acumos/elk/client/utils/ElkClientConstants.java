@@ -29,6 +29,7 @@ public final class ElkClientConstants {
 	public static final String GET_ALL_REPOSITORIES = "/all/repositories";
 	public static final String SNAPSHOT_CREATE_REPOSITORY = "/create/repositories";
 	public static final String SNAPSHOT_DELETE_REPOSITORY_REQUEST = "/delete/repositories";
+	public static final String SNAPSHOT_DELETE_ARCHIVED_REPOSITORY_REQUEST = "/delete/ArchivedRepositories";
 
 	public static final String GET_ALL_SNAPSHOTS = "/all/snapshot";
 	public static final String CREATE_SNAPSHOT_REQUEST = "/create/snapshot";
