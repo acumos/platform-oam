@@ -16,7 +16,7 @@
 
 	<groupId>org.acumos.elk-client</groupId>
 	<artifactId>elk-client</artifactId>
-	<version>3.0.5-SNAPSHOT</version>
+	<version>3.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>elk-client</name>
