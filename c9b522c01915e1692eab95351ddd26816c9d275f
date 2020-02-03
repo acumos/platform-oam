@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0cc07378_73c27f93",
+        "filename": "logging-rest-library/src/main/java/com/logging/rest/example/springbootswagger2/controller/LoggingController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:17:59Z",
+      "side": 1,
+      "message": "remove this demo",
+      "range": {
+        "startLine": 12,
+        "startChar": 18,
+        "endLine": 12,
+        "endChar": 22
+      },
+      "revId": "c9b522c01915e1692eab95351ddd26816c9d275f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "907b01ca_e2514657",
+        "filename": "logging-rest-library/src/main/java/com/logging/rest/example/springbootswagger2/controller/LoggingController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:17:59Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 13,
+        "startChar": 18,
+        "endLine": 13,
+        "endChar": 22
+      },
+      "revId": "c9b522c01915e1692eab95351ddd26816c9d275f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "561d19d3_c2926242",
+        "filename": "logging-rest-library/src/main/java/com/logging/rest/example/springbootswagger2/controller/LoggingController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:17:59Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 14,
+        "startChar": 18,
+        "endLine": 14,
+        "endChar": 22
+      },
+      "revId": "c9b522c01915e1692eab95351ddd26816c9d275f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e1d589ae_980dd609",
+        "filename": "logging-rest-library/src/main/java/com/logging/rest/example/springbootswagger2/controller/LoggingController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:17:59Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 15,
+        "startChar": 18,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "c9b522c01915e1692eab95351ddd26816c9d275f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2dccdcc0_596af8ff",
+        "filename": "logging-rest-library/src/main/java/com/logging/rest/example/springbootswagger2/controller/LoggingController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:17:59Z",
+      "side": 1,
+      "message": "remove this",
+      "range": {
+        "startLine": 16,
+        "startChar": 18,
+        "endLine": 16,
+        "endChar": 22
+      },
+      "revId": "c9b522c01915e1692eab95351ddd26816c9d275f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b2b8949a_70fb7749",
+        "filename": "logging-rest-library/src/main/java/com/logging/rest/example/springbootswagger2/controller/LoggingController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:17:59Z",
+      "side": 1,
+      "message": "dont remove this demo",
+      "range": {
+        "startLine": 31,
+        "startChar": 22,
+        "endLine": 31,
+        "endChar": 26
+      },
+      "revId": "c9b522c01915e1692eab95351ddd26816c9d275f",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
