@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "408623a5_2f7a46dc",
+        "filename": "logging-library/src/main/java/org/acumos/demo/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:14:21Z",
+      "side": 1,
+      "message": "remove this demo too",
+      "range": {
+        "startLine": 20,
+        "startChar": 19,
+        "endLine": 20,
+        "endChar": 23
+      },
+      "revId": "a89aa155fb68f3dfe901c95c1db3f401141bf650",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "202c0c1e_2b331a35",
+        "filename": "logging-library/src/main/java/org/acumos/demo/logging/util/LogConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:14:21Z",
+      "side": 1,
+      "message": "remove this demo too",
+      "range": {
+        "startLine": 20,
+        "startChar": 19,
+        "endLine": 20,
+        "endChar": 23
+      },
+      "revId": "a89aa155fb68f3dfe901c95c1db3f401141bf650",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e52fabf_00fd07c8",
+        "filename": "logging-library/src/main/java/org/acumos/demo/logging/util/LoggingConstant.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-03T18:14:21Z",
+      "side": 1,
+      "message": "remove this demo",
+      "range": {
+        "startLine": 1,
+        "startChar": 19,
+        "endLine": 1,
+        "endChar": 23
+      },
+      "revId": "a89aa155fb68f3dfe901c95c1db3f401141bf650",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
