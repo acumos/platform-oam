@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dd4bbae3_eb790f9e",
+        "filename": "logging-library/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-02-04T18:45:07Z",
+      "side": 1,
+      "message": "Library  \n\nhere the word seems appropriate",
+      "range": {
+        "startLine": 1,
+        "startChar": 17,
+        "endLine": 1,
+        "endChar": 26
+      },
+      "revId": "d631fbfe3c875a0d9718f6e42aa9d435e32158ec",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9f1bf1a4_f7b796f6",
+        "filename": "logging-library/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-02-04T18:45:07Z",
+      "side": 1,
+      "message": "it\u0027s not a proof of concept anymore",
+      "range": {
+        "startLine": 3,
+        "startChar": 26,
+        "endLine": 3,
+        "endChar": 50
+      },
+      "revId": "d631fbfe3c875a0d9718f6e42aa9d435e32158ec",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f378b43_dbe8a029",
+        "filename": "logging-library/src/main/java/org/acumos/library/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-02-04T18:45:07Z",
+      "side": 1,
+      "message": "please remove \u0027library\u0027 package/path component, redundant.  Just org.acumos.logging is fine",
+      "range": {
+        "startLine": 20,
+        "startChar": 19,
+        "endLine": 20,
+        "endChar": 26
+      },
+      "revId": "d631fbfe3c875a0d9718f6e42aa9d435e32158ec",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
