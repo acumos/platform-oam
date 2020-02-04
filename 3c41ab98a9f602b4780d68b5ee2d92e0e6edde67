@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b2b0488_67829f65",
+        "filename": "logging-library/pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-02-04T17:11:21Z",
+      "side": 1,
+      "message": "I suggest acumos-logging as the artifact id.",
+      "range": {
+        "startLine": 25,
+        "startChar": 21,
+        "endLine": 25,
+        "endChar": 28
+      },
+      "revId": "3c41ab98a9f602b4780d68b5ee2d92e0e6edde67",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
