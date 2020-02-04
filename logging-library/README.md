@@ -1,6 +1,6 @@
-# Acumos Logging Standards
+# Acumos Logging Library
 
-This repository holds the POC of logging standards for Acumos Boreas Release.
+This repository holds the logging standards for Acumos Boreas Release.
 Adopt the MDC Key-Value pair approach and get rid of position specific pipe delimiters.
 
 

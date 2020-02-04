@@ -1,4 +1,4 @@
-package org.acumos.demo.logging.util;
+package org.acumos.logging.util;
 
 public final class LoggingConstant {
 

@@ -22,11 +22,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.acumos.platform-oam</groupId>
-	<artifactId>logging-demo</artifactId>
+	<artifactId>acumos-logging</artifactId>
 	<version>3.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>logging-demo</name>
-	<description>Demo project for Logging</description>
+	<name>logging-library</name>
+	<description>Library project for Logging</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

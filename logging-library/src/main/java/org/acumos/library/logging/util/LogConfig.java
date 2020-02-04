@@ -17,14 +17,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ===============LICENSE_END=========================================================
 */
-package org.acumos.demo.logging.util;
+package org.acumos.logging.util;
 
 import java.net.InetAddress;
 import java.util.Properties;
 import java.util.UUID;
 
-import org.acumos.demo.logging.util.ACUMOSLogConstants.MDCs;
-import org.acumos.demo.logging.util.ACUMOSLogConstants.ResponseStatus;
+import org.acumos.logging.util.ACUMOSLogConstants.MDCs;
+import org.acumos.logging.util.ACUMOSLogConstants.ResponseStatus;
 import org.slf4j.MDC;
 
 public class LogConfig {

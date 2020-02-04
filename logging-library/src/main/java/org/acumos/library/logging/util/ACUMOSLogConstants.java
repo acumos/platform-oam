@@ -17,7 +17,7 @@
   limitations under the License.
   ===============LICENSE_END=========================================================
   */
-package org.acumos.demo.logging.util;
+package org.acumos.logging.util;
 
 import org.slf4j.Marker;
 import org.slf4j.MarkerFactory;
