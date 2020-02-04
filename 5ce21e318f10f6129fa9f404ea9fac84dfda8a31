@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fb20a555_d4482b5b",
+        "filename": "logging-library/src/main/java/org/acumos/library/logging/util/ACUMOSLogConstants.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-02-04T20:48:35Z",
+      "side": 1,
+      "message": "yes I see that you removed the package name from the path, but you must also rename the file -- the package must match the directory path",
+      "range": {
+        "startLine": 20,
+        "startChar": 18,
+        "endLine": 20,
+        "endChar": 19
+      },
+      "revId": "5ce21e318f10f6129fa9f404ea9fac84dfda8a31",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
