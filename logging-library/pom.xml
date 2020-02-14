@@ -23,7 +23,7 @@
 
 	<groupId>org.acumos.platform-oam</groupId>
 	<artifactId>acumos-logging</artifactId>
-	<version>3.0.7-SNAPSHOT</version>
+	<version>4.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>logging-library</name>
 	<description>Library project for Logging</description>

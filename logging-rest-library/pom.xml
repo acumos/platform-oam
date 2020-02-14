@@ -4,7 +4,7 @@
 
 	<groupId>com.logging.rest.example</groupId>
 	<artifactId>logging-rest-library</artifactId>
-	<version>3.0.7-SNAPSHOT</version>
+	<version>4.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>logging-rest-library</name>
 	<description>logging-rest-library API for logging library</description>
@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>org.acumos.platform-oam</groupId>
 			<artifactId>logging-library</artifactId>
-			<version>3.0.7-SNAPSHOT</version>
+			<version>4.0.1-SNAPSHOT</version>
 		</dependency>
 		
 		

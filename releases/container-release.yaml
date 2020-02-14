@@ -1,20 +1,20 @@
 distribution_type: container
-container_release_tag: 3.0.7
+container_release_tag: 4.0.1
 container_pull_registry: nexus3.acumos.org:10004
 container_push_registry: nexus3.acumos.org:10002
 project: platform-oam
 ref: d053050f27bc7227eec3c059a5d4874d6f779dbf
 containers:
     - name: acumos-filebeat
-      version: 3.0.7
+      version: 4.0.1
     - name: acumos-kibana
-      version: 3.0.7
+      version: 4.0.1
     - name: acumos-logstash
-      version: 3.0.7
+      version: 4.0.1
     - name: acumos-metricbeat
-      version: 3.0.7
+      version: 4.0.1
     - name: elk-client
-      version: 3.0.7
+      version: 4.0.1
     - name: acumos-elasticsearch
-      version: 3.0.7
+      version: 4.0.1
       
