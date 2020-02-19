@@ -16,9 +16,9 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 # https://github.com/elastic/logstash-docker
-FROM docker.elastic.co/logstash/logstash-oss:6.8.6
+FROM docker.elastic.co/logstash/logstash-oss:7.6.0
 COPY /config/logstash.yml /usr/share/logstash/config/logstash.yml
-RUN /usr/share/logstash/bin/logstash-plugin install --version "4.3.13" logstash-input-jdbc
+RUN /usr/share/logstash/bin/logstash-plugin install --version "5.0.0" logstash-input-jdbc
 ADD https://downloads.mariadb.com/enterprise/1prc-8jnh/connectors/java/connector-java-2.1.0/mariadb-java-client-2.1.0.jar /usr/share/logstash/vendor/bundle/
 USER root
 RUN ls -al /usr/share/logstash/vendor/bundle \
