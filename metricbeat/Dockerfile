@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-FROM docker.elastic.co/beats/metricbeat:6.2.4
+FROM docker.elastic.co/beats/metricbeat:7.6.0
 COPY /config/metricbeat.yml /usr/share/metricbeat/metricbeat.yml
 USER root
 COPY ./module.d /usr/share/metricbeat/modules.d
