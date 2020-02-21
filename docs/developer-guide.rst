@@ -565,7 +565,7 @@ What is Logging Library?
 
 Logging Library has the following given below features :
 
-There are two .java(ACUMOSLogConstants and LogConfig.java) files and one logback.xml file is there.
+There are thress .java(ACUMOSLogConstants,LoggingConstant.java and LogConfig.java) files.
 
 1.In the ACUMOSLogConstants.java following  given below features are there.
 Marker
@@ -694,10 +694,10 @@ define GET_ALL_INDICES whose value is /all/indices in the ElkClientConstants.jav
 
 Here the user is the who login into the web application and accessing the particular maven project module.
 
-3.Logback.xml
-=============
-We have defined various appenders while help in creating the log statements.With the help of these appenders we can print
-the logs as per user requirement.
+3.Last File is the LoggingConstant.java
+=======================================
+
+All the variables used in the logging-library is kept here as a constant or utility reusable file.
 
 ================================================
 Testing Logging Library Developer Guide
@@ -706,16 +706,17 @@ What is Logging Library Testing Rest API?
 ================================================
 1.Rest API Test.
 =============================
-We have created logging-rest-demo project, in this project we are importing the logging-demo jar so we will import all the
-functionality & various features of the logging-demo project through the logging-demo jar.
-We have created some Rest API methods in the test project logging-rest-demo in that we are implementing the different different
-features of the logging-demo project.
+We have created logging-rest-library project only for the developers to test the logging-library in local,logging-rest-library will not be deployed on the server.
+logging-rest-library is meant only for the developers to test logging-library in their system locally & will not be deployed or can not be accessed on any servers.
+In this project we are importing the logging-library jar so we will import all the functionality & various features of the logging-library project through the logging-library jar.
+We have created some Rest API methods in the test project logging-rest-library in that we are implementing the different different
+features of the logging-library project.
 
 How to implement the Logging Library jar?
 ========================================= 
 
 To implement the Logging Library jar,there are some few specific given below guidelines which the developer should use while
-implementing the logging-demo jar.
+implementing the logging-library jar.
 
 1.In the starting of the implemented REST API method first use the line from the Logging Library jar as 
  LogConfig.setEnteringMDCs(String targetEntry, String targetService, String user, String responseCode,String responseSeverity)
@@ -732,20 +733,25 @@ where markerInputVal is the particular marker which you want to use in your appl
 
 4.In the end of the implemented REST API method use the line LogConfig.clearMDCDetails() to clear all the log MDC details.
 
-Steps to include logging-demo.jar in your project.
+Logback.xml
+=============
+We have defined various appenders while help in creating the log statements.With the help of these appenders we can print
+the logs as per user requirement.
+
+Steps to include logging-library.jar in your project.
 ==================================================
 
-Logging Library is provided in the form of as a jar,Suppose we want to add this logging-demo.jar to a new project then given
+Logging Library is provided in the form of as a jar,Suppose we want to add this logging-library.jar to a new project then given
 below are the steps to in guide this jar and use in your project.
 
 1.Add the given below entry in dependency section of the pom.xml of your new project.
 		<dependency>
 			<groupId>org.acumos.platform-oam</groupId>
-			<artifactId>logging-demo</artifactId>
+			<artifactId>logging-library</artifactId>
 			<version>3.0.4-SNAPSHOT</version>
 		</dependency>
 		
-2.Publish the logging-demo.jar into the maven repository.
+2.Publish the logging-library.jar into the maven repository.
 		
 3.Now Suppose you want to add logging related statements in your java files then just you need to write the logger.Debug_levels
 as per your requirement, like debug,error,fatal,info,warn.
@@ -755,7 +761,7 @@ classes files of the jar.
 
 
 You will import the appropriate,required  and use it your project as per the end user requirement.To see how you can use the
-logging-demo library ,you can refer to the above section Logging Library Developer Guide.
+logging-library library ,you can refer to the above section Logging Library Developer Guide.
 
 
 
