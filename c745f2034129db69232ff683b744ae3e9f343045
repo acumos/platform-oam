@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e4b7f09f_aee4bf08",
+        "filename": "docs/developer-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-21T13:56:38Z",
+      "side": 1,
+      "message": "make it three",
+      "range": {
+        "startLine": 568,
+        "startChar": 11,
+        "endLine": 568,
+        "endChar": 16
+      },
+      "revId": "c745f2034129db69232ff683b744ae3e9f343045",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9dd9d047_e7edae95",
+        "filename": "docs/developer-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 710,
+      "author": {
+        "id": 24
+      },
+      "writtenOn": "2020-02-21T13:56:38Z",
+      "side": 1,
+      "message": "replace this line with the selected one \n\"who does not have the access for the dev environment, and need to understand the logging library.\"",
+      "range": {
+        "startLine": 710,
+        "startChar": 102,
+        "endLine": 710,
+        "endChar": 162
+      },
+      "revId": "c745f2034129db69232ff683b744ae3e9f343045",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
