@@ -21,6 +21,6 @@
 #
 server.name: kibana
 server.host: "0"
-elasticsearch.url: http://elasticsearch:9200
+elasticsearch.hosts: http://elasticsearch:9200
 elasticsearch.requestTimeout: 120000
-
+#xpack.monitoring.ui.container.elasticsearch.enabled: true
