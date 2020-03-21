@@ -99,7 +99,7 @@ Steps
    $ vi acumos-elk-env.sh
    
 
-4. The docker-compose.yml file as well as component directories are located in the elk-stack directory. Edit docker-compose.yml and make changes to these environment variables (ACUMOS_ELK_JDBC_CONNECTION_STRING, ACUMOS_ELK_JDBC_USERNAME, ACUMOS_ELK_JDBC_PASSWORD) to connect to database instance.
+4. The docker-compose.yml file as well as component directories are located in the elk-stack directory. Edit docker-compose.yml and make changes to these environment variables (ACUMOS_ELK_JDBC_CONNECTION_STRING, ACUMOS_ELK_JDBC_USERNAME, ACUMOS_ELK_JDBC_PASSWORD) to connect to database instance. Edit elasticsearch.yml and make changes to these environment variables ACUMOS_ELK_ELASTICSEARCH_HOST.
 
 .. code:: bash
 
