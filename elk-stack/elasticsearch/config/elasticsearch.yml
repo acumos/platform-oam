@@ -19,8 +19,7 @@
 ## Default Elasticsearch configuration from elasticsearch-docker.
 ## from https://github.com/elastic/elasticsearch-docker/blob/master/build/elasticsearch/elasticsearch.yml
 #
-#node.name: "cognita-dev1-logcollector"
-node.name: ACUMOS_ELK_ELASTICSEARCH_HOST
+node.name: $(ACUMOS_ELK_ELASTICSEARCH_HOST)
 cluster.name: "docker-cluster"
 network.host: 0.0.0.0
 path.data: /usr/share/elasticsearch/data
