@@ -19,6 +19,13 @@
 ========================================================================
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
+Version 4.0.2, 17 March 2020
+--------------------------------
+* ACUMOS-3983	Upgrade of Kibana to v.6.8.6
+* ACUMOS-3984	Upgrade Elastic Search to v.6.8.6
+* ACUMOS-3989	Upgrade of Logstash to v.6.8.6
+* ACUMOS-3982	Upgrade to the ELK stack components to v.6.8.6
+* ACUMOS-3950	<IST2><Portal Marketplace><Maintained Backup Logs>: Appropriate validation message not displayed while creating duplicate backup and repository 
 
 Version 4.0.1, 14 February 2020
 --------------------------------

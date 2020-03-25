@@ -74,7 +74,7 @@ Prerequisites
 `Docker <https://docs.docker.com/>`_ and `Docker Compose <https://docs.docker.com/compose/install/>`_ installed
 
 
-Steps
+Steps to fresh install 
 -----
 
 1. Clone the platform-oam repository 
@@ -99,7 +99,7 @@ Steps
    $ vi acumos-elk-env.sh
    
 
-4. The docker-compose.yml file as well as component directories are located in the elk-stack directory. Edit docker-compose.yml and make changes to these environment variables (ACUMOS_ELK_JDBC_CONNECTION_STRING, ACUMOS_ELK_JDBC_USERNAME, ACUMOS_ELK_JDBC_PASSWORD) to connect to database instance.
+4. The docker-compose.yml file as well as component directories are located in the elk-stack directory. Edit docker-compose.yml and make changes to these environment variables (ACUMOS_ELK_JDBC_CONNECTION_STRING, ACUMOS_ELK_JDBC_USERNAME, ACUMOS_ELK_JDBC_PASSWORD) to connect to database instance. Edit elasticsearch.yml and make changes to these environment variables ACUMOS_ELK_ELASTICSEARCH_HOST.
 
 .. code:: bash
 
@@ -121,7 +121,53 @@ Steps
 
    $ ./docker-compose-elk.sh stop
 
+Steps to upgrade to 6.8.6
+-----
 
+1. There are changes in the code, so if you already taken the clone before keep that as a backup and take the Clone the platform-oam repository 
+
+.. code:: bash
+
+   $ git clone https://gerrit.acumos.org/r/platform-oam
+
+2. Check if the volumes are already there, then no need to create the volume, if volume are not present create the new volume taking the help of step 2 from "Steps to fresh install".
+
+3. If you have already taken the backup of previous code, you can copy and replace "acumos-elk-env.sh". Which will have all the previous environment variables.
+
+Else update the environment variable using below:
+
+.. code:: bash
+
+   $ cd elk-stack
+
+   $ vi acumos-elk-env.sh
+
+4. If you have already taken the backup of previous code, you can copy and replace "docker-compose.yml". Which will have all the previous changes.
+
+Else update the environment variable using below:
+
+.. code:: bash
+
+   $ cd elk-stack
+
+   $ vi docker-compose.yml
+
+5. There is no changes in this step you can follow the same way. 
+Starts and attaches to containers for Elasticsearch, Logstash, Kibana
+
+.. code:: bash
+
+   $ ./docker-compose-elk.sh up -d
+
+
+6. There is no changes in this step you can follow the same way. 
+To stop the running containers without removing them
+
+.. code:: bash
+
+   $ ./docker-compose-elk.sh stop
+
+   
 Filebeat setup steps:
 ---------------------
 Filebeat should be installed as an agent on the servers on which Acumos is running.
