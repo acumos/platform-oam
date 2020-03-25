@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "32aaa06d_e69406a0",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "\"Steps for first time, clean install\"",
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f9a8228_66382642",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "Remove version then you will not have to keep in sync when version changes.",
+      "range": {
+        "startLine": 124,
+        "startChar": 0,
+        "endLine": 124,
+        "endChar": 25
+      },
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65f6a1da_9db3fe41",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "If there changes to the base Elasticsearch code, a new version of the base code will need to be pulled from the garret repo.  Before that step make a backup of your platform directory.",
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d8d43de_9ae7e49b",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "verify that the volumes previously created are present.  If not create the volumes (same as step 2 in clean install):\n$ docker volume create acumos-esdata\n$ docker volume create acumos-logs",
+      "range": {
+        "startLine": 133,
+        "startChar": 3,
+        "endLine": 133,
+        "endChar": 182
+      },
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "570e9404_a06b8e41",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "** You need to tell the user where the acumos-elk-env.sh path is and what will need to be changed.  You really don\u0027t want the user to go back and forth between clean install and update right.  Could you take another look at steps 3 and 4?",
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44896dfc_fcbb3a5d",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "I don\u0027t think you need the statement \"There is no changes in this step you can follow the same way.\"  Just put to start ... or something like that.",
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5d8bae19_339505a5",
+        "filename": "docs/user-guide.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 57
+      },
+      "writtenOn": "2020-03-25T17:57:56Z",
+      "side": 1,
+      "message": "I don\u0027t think you need the statement \"There is no changes in this step you can follow the same way.\"  Just put to stop ... or something like that.",
+      "revId": "222fe11aba96047387e584ca57b5a4128e7656db",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": true
+    }
+  ]
+}
