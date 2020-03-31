@@ -356,7 +356,7 @@ public class SnapshotRepositoryServiceImpl extends AbstractELKClientConnection i
 		logger.debug("locationKey:{}" + locationKey);
 		logger.debug("locationValue:{}" + locationValue);
 		logger.debug("compressKey:{}" + compressKey);
-		boolean compressValue = true;
+		boolean compressValue = false;
 		if (repoType == ElkClientConstants.ARCHIVE_ES_DATA) {
 			request.name(
 					ElkClientConstants.ARCHIVE_ES_DATA + "-" + elkCreateRepositoriesRequest.getRepositoryName().trim());
