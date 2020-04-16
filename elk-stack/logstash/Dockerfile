@@ -16,7 +16,7 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 # https://github.com/elastic/logstash-docker
-FROM docker.elastic.co/logstash/logstash-oss:6.8.6
+FROM docker.elastic.co/logstash/logstash-oss:7.6.0
 COPY /config/logstash.yml /usr/share/logstash/config/logstash.yml
 RUN /usr/share/logstash/bin/logstash-plugin install --version "5.0.0" logstash-integration-jdbc
 #logstash-input-jdbc

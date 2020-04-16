@@ -33,7 +33,8 @@ discovery.zen.minimum_master_nodes: 1
 ## see https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
 #
 discovery.type: single-node
-
+reindex.remote.whitelist: oldhost:9200
+action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ##  Threshold value for disk storage , low and high watermark value.
 #cluster.routing.allocation.disk.threshold_enabled: true
 #cluster.routing.allocation.disk.watermark.low: 5gb
