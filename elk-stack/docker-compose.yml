@@ -16,7 +16,7 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 version: '2'
-
+ 
 services:
 
   elasticsearch:
