@@ -19,10 +19,18 @@
 FROM docker.elastic.co/logstash/logstash-oss:6.8.6
 COPY /config/logstash.yml /usr/share/logstash/config/logstash.yml
 RUN /usr/share/logstash/bin/logstash-plugin install --version "4.3.13" logstash-input-jdbc
+<<<<<<< HEAD   (297bcd logstash file updation)
 #"5.0.0" logstash-integration-jdbc
 #"4.3.13" logstash-input-jdbc
+=======
+
+>>>>>>> CHANGE (dda781 docker-compose.yml update)
 ADD https://downloads.mariadb.com/enterprise/1prc-8jnh/connectors/java/connector-java-2.3.0/mariadb-java-client-2.3.0.jar /usr/share/logstash/vendor/bundle/
 USER root
 RUN ls -al /usr/share/logstash/vendor/bundle \
+<<<<<<< HEAD   (297bcd logstash file updation)
   && chmod a+r /usr/share/logstash/vendor/bundle/mariadb-java-client-2.3.0.jar
 
+=======
+  && chmod a+r /usr/share/logstash/vendor/bundle/mariadb-java-client-2.3.0.jar
+>>>>>>> CHANGE (dda781 docker-compose.yml update)
