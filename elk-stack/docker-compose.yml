@@ -42,7 +42,7 @@ services:
       - "${ACUMOS_ELK_LOGSTASH_PORT}:5000"
     environment:
       LS_JAVA_OPTS: "-Xmx${ACUMOS_ELK_LS_JAVA_HEAP_MAX_SIZE} -Xms${ACUMOS_ELK_LS_JAVA_HEAP_MIN_SIZE}"
-      ACUMOS_ELK_JDBC_DRIVER_LIBRARY: "/usr/share/logstash/vendor/bundle/mariadb-java-client-2.1.0.jar"
+      ACUMOS_ELK_JDBC_DRIVER_LIBRARY: "/usr/share/logstash/vendor/bundle/mariadb-java-client-2.3.0.jar"
       ACUMOS_ELK_JDBC_DRIVER_CLASS: "org.mariadb.jdbc.Driver"
       ACUMOS_ELK_JDBC_CONNECTION_STRING: "jdbc:mariadb://databaseurl:port/databasename"
       ACUMOS_ELK_JDBC_USERNAME: "username"
