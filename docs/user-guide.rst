@@ -81,7 +81,7 @@ Steps for first time, clean install
 
 .. code:: bash
 
-   $ git clone https://gerrit.acumos.org/r/platform-oam
+   $ git clone --depth 1 https://gerrit.acumos.org/r/platform-oam
 
 2. Create docker volume namely acumos-esdata and acumos-logs if no volumes created earlier.If acumos-esdata and acumos-logs volume already exist on host machine then skip this step.
    
@@ -128,7 +128,7 @@ Steps to upgrade
 
 .. code:: bash
 
-   $ git clone https://gerrit.acumos.org/r/platform-oam
+   $ git clone --depth 1 https://gerrit.acumos.org/r/platform-oam
 
 2. Verify that the volumes previously created are present.  If not create the volumes (same as step 2 in clean install):
 

@@ -82,7 +82,7 @@ for use with docker-compose.
 .. code:: bash
 
    # Get the platform-oam repository 
-   $ git clone https://gerrit.acumos.org/r/platform-oam
+   $ git clone --depth 1 https://gerrit.acumos.org/r/platform-oam
    # Select the Boreas branch
    cd platform-oam
    git checkout boreas

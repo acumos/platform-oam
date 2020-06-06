@@ -25,7 +25,7 @@ The OA&M project is for the processes, activities, tools, and standards involved
 
 Jira: `https://jira.acumos.org <https://jira.acumos.org>`_   project name: platform-oam
 
-Gerrit:  git clone https://gerrit.acumos.org/r/platform-oam
+Gerrit:  git clone --depth 1 https://gerrit.acumos.org/r/platform-oam
 
 
 ==================================
