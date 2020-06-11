@@ -19,6 +19,15 @@
 ========================================================================
 Platform Operations, Administration, and Management (OA&M) Release Notes
 ========================================================================
+Version 4.0.3, 02 June 2020
+--------------------------------
+* ACUMOS-4128   IST| Filebeat image is not getting Up after deploying the build
+* ACUMOS-4058   Upgrade to the ELK stack components to v.7.6.0
+* ACUMOS-4059	Upgrade of Kibana to v.6.8.6
+* ACUMOS-4060	Upgrade Elastic Search to v.6.8.6
+* ACUMOS-4061	Upgrade of Logstash to v.6.8.6
+* ACUMOS-3806   ELK stack enhancements
+
 Version 4.0.2, 17 March 2020
 --------------------------------
 * ACUMOS-3983	Upgrade of Kibana to v.6.8.6
