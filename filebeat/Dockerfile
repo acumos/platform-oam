@@ -16,7 +16,7 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 # https://hub.docker.com/r/prima/filebeat/
-FROM docker.elastic.co/beats/filebeat:6.8.6
+FROM docker.elastic.co/beats/filebeat:7.8.1
 COPY /config/filebeat.yml /usr/share/filebeat/filebeat.yml
 USER root
 RUN chown filebeat /usr/share/filebeat/filebeat.yml && chmod go-w /usr/share/filebeat/filebeat.yml
