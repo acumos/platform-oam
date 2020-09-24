@@ -2,4 +2,3 @@
 #
 42f0c83244389e408b42fa668348002012ecba46                                       	GitHub Replication
 cf0b6db323e1ce8b17896dad38665c636b407367                                       	saml/acumos-gerrit-platform-oam-committers
-ldap:cn=acumos-gerrit-platform-oam-committers,ou=Groups,dc=freestandards,dc=org	ldap/acumos-gerrit-platform-oam-committers
